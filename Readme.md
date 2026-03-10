@@ -2,7 +2,7 @@
 ---
 nomeAluno: Juliana Souza Barbosa
 matricula: 579776
----
+
 
 # Instalando o TKO e configurando o repositório
 

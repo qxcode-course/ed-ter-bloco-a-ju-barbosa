@@ -1,0 +1,25 @@
+2026-03-10 13:54:14, MOVE, v:1, k:ed@apagando, mode:DOWN
+2026-03-10 13:54:26, MOVE, v:1, k:ed@lista_d1, mode:DOWN
+2026-03-10 13:54:31, MOVE, v:1, k:ed@lista_d4, mode:DOWN
+2026-03-10 13:54:36, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-03-10 13:57:57, MOVE, v:1, k:ed@balanceada, mode:DOWN
+2026-03-10 13:58:03, MOVE, v:1, k:ed@caminhao, mode:DOWN
+2026-03-10 13:58:08, MOVE, v:1, k:ed@polonesa, mode:DOWN
+2026-03-10 14:04:43, MOVE, v:1, k:ed@polonesa, mode:PICK
+2026-03-10 14:05:24, EXEC, v:1, k:ed@polonesa, mode:FULL, rate:0, size:5
+2026-03-10 14:05:25, EXEC, v:1, k:ed@polonesa, mode:FULL, rate:0
+2026-03-10 14:05:31, MOVE, v:1, k:ed@polonesa, mode:BACK
+2026-03-10 14:05:40, MOVE, v:1, k:ed@polonesa, mode:PICK
+2026-03-10 14:06:01, MOVE, v:1, k:ed@polonesa, mode:BACK
+2026-03-10 14:06:04, MOVE, v:1, k:ed@caminhao, mode:PICK
+2026-03-10 14:09:24, MOVE, v:1, k:ed@caminhao, mode:BACK
+2026-03-10 14:09:31, MOVE, v:1, k:ed@balanceada, mode:PICK
+2026-03-10 14:09:51, MOVE, v:1, k:ed@balanceada, mode:BACK
+2026-03-10 14:09:53, MOVE, v:1, k:ed@balanceada, mode:PICK
+2026-03-10 14:15:23, MOVE, v:1, k:ed@balanceada, mode:BACK
+2026-03-10 14:15:56, MOVE, v:1, k:ed@princesa, mode:DOWN
+2026-03-10 14:15:58, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-10 14:17:34, EXEC, v:1, k:ed@princesa, mode:FREE, size:5
+2026-03-10 14:18:13, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-10 14:18:48, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-10 14:20:20, MOVE, v:1, k:ed@apagando, mode:BACK
