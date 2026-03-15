@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_19-18-55",
+            "content": "@@ -110,16 +110,17 @@\n   if a %3C\n+=\n  12 %7B%0A  \n@@ -137,30 +137,16 @@\n tf(%22\n-%25v eh \n crianca\n-%5Cn%22, nome\n+%22\n )%0A  \n@@ -195,28 +195,14 @@\n nt(%22\n-%25v eh jovem%5Cn%22, nome\n+jovem%22\n )%0A  \n@@ -251,29 +251,15 @@\n tf(%22\n-%25v eh adulto%5Cn%22, nome\n+adulto%22\n )%0A  \n@@ -310,28 +310,14 @@\n tf(%22\n-%25v eh idoso%5Cn%22, nome\n+idoso%22\n )%0A  \n@@ -346,28 +346,14 @@\n tf(%22\n-%25v eh mumia%5Cn%22, nome\n+mumia%22\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-15_19-22-06",
+            "content": "@@ -194,33 +194,32 @@\n 8%7B%0A    fmt.Print\n-f\n (%22%25v eh jovem%5Cn%22\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-15_19-22-51",
+            "content": "@@ -172,17 +172,28 @@\n e if  a \n-%3C\n+%3E 12 && a %3C=\n  18%7B%0A   \n@@ -239,16 +239,26 @@\n  else if\n+ a %3E 18 &&\n  a %3C 65 \n@@ -315,16 +315,26 @@\n  if \n+a %3E= 65 &&\n  a %3C 100\n 0 %7B%0A\n@@ -329,17 +329,16 @@\n  a %3C 100\n-0\n  %7B%0A    f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-15_19-23-39",
+            "content": "@@ -68,16 +68,28 @@\n ring%0A   \n+fmt.Scan(&a)\n %0A   fmt.\n@@ -99,32 +99,16 @@\n n(&nome)\n-%0A   fmt.Scan(&a)\n %0A%0A   if \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-15_19-24-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var a int\n   var nome string\n   \n   fmt.Scan(&nome)\n   fmt.Scan(&a)\n\n   if a < 12 {\n    fmt.Printf(\"%v eh crianca\\n\", nome)\n   } else if  a < 18{\n    fmt.Printf(\"%v eh jovem\\n\", nome)\n   } else if a < 65 {\n    fmt.Printf(\"%v eh adulto\\n\", nome)\n   } else if  a < 1000 {\n    fmt.Printf(\"%v eh idoso\\n\", nome)\n   } else {\n    fmt.Printf(\"%v eh mumia\\n\", nome)\n   }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

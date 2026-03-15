@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_19-41-17",
+            "content": "@@ -150,16 +150,44 @@\n  %7D else \n+if H %3E P && F %3E P && D == 1 \n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_19-45-50",
+            "content": "@@ -141,10 +141,8 @@\n f(%22S\n-%5Cn\n %22)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_19-46-06",
+            "content": "@@ -156,36 +156,8 @@\n lse \n-if H %3E P && F %3E P && D == 1 \n %7B%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_19-46-15",
+            "content": "@@ -111,19 +111,8 @@\n P &&\n-  F && H &&\n  D =\n@@ -176,24 +176,14 @@\n P &&\n- F %3E H &&\n  D == \n--\n 1 %7B%0A\n@@ -204,55 +204,16 @@\n tf(%22\n-S%5Cn%22)%0A   %7D else %7B%0A      fmt.Printf(%22N%5Cn\n+N\n %22)%0A   %7D\n+ \n %0A%7D%0A\n-%0Ah\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-15_19-53-14",
+            "content": "@@ -111,17 +111,18 @@\n P &&  F \n-%3C\n+&&\n  H && D \n@@ -270,8 +270,10 @@\n %0A   %7D%0A%7D%0A\n+%0Ah\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-15_19-53-31",
+            "content": "@@ -103,24 +103,25 @@\n  && F %3C P &&\n+ \n  F %3C H && D \n@@ -230,80 +230,8 @@\n n%22)%0A\n-   %7D else if  %3C P && F %3C P && F %3E H && D == -1%7B%0A      fmt.Printf(%22S%5Cn%22)%0A\n    %7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-15_19-55-17",
+            "content": "@@ -234,25 +234,24 @@\n   %7D else if \n-H\n  %3C P && F %3C \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-15_19-55-36",
+            "content": "@@ -302,82 +302,8 @@\n n%22)%0A\n-   %7D else if H %3E P && F %3C P && F %3E H && D == -1 %7B%0A      fmt.Printf(%22S%5Cn%22)%0A\n    %7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-15_19-56-59",
+            "content": "@@ -314,33 +314,33 @@\n e if H %3E P && F \n-%3E\n+%3C\n  P && F %3E H && D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-15_19-57-40",
+            "content": "@@ -323,33 +323,33 @@\n P && F %3E P && F \n-%3C\n+%3E\n  H && D == -1 %7B%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-15_20-00-48",
+            "content": "@@ -114,34 +114,26 @@\n & F %3C H \n-%7B%0A      if\n+&&\n  D == -1\n %7B%0A      \n@@ -124,21 +124,19 @@\n  D == -1\n+ \n %7B%0A\n-   \n       fm\n@@ -147,32 +147,24 @@\n intf(%22S%5Cn%22)%0A\n-      %7D%0A\n    %7D else if\n@@ -184,34 +184,26 @@\n  P && F %3E H \n-%7B%0A      if\n+&&\n  D == -1 %7B%0A \n@@ -221,32 +221,24 @@\n intf(%22S%5Cn%22)%0A\n-      %7D%0A\n    %7D else if\n@@ -262,34 +262,26 @@\n & F %3E H \n-%7B%0A      if\n+&&\n  D == -1\n  %5B%0A     \n@@ -276,18 +276,16 @@\n = -1\n- %5B\n+%7B\n %0A      \n- \n fmt.\n@@ -302,16 +302,8 @@\n n%22)%0A\n-      %5D%0A\n    %7D\n@@ -338,18 +338,11 @@\n  %3C H\n-%7B%0A      if\n+ &&\n  D =\n@@ -348,16 +348,22 @@\n == -1 %7B%0A\n+      \n fmt.Prin\n@@ -376,16 +376,8 @@\n n%22)%0A\n-      %7D%0A\n    %7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-15_20-07-14",
+            "content": "@@ -345,17 +345,20 @@\n %5Cn%22)%0A   \n-%7D\n+   %5D\n %0A   %7D el\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-15_20-07-31",
+            "content": "@@ -311,25 +311,25 @@\n  if D == -1 \n-%7B\n+%5B\n %0A       fmt.\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-15_20-07-51",
+            "content": "@@ -434,100 +434,8 @@\n   %7D%0A\n-      %7D else if H %3E P && F %3E P && F %3E H %7B%0A      if D == 1 %7B%0A      fmt.Printf(%22S%5Cn%22)%0A      %7D%0A\n    %7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-15_20-09-47",
+            "content": "@@ -500,33 +500,33 @@\n     fmt.Printf(%22\n-N\n+S\n %5Cn%22)%0A      %7D%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_20-10-00",
+            "content": "@@ -436,17 +436,16 @@\n %7D%0A      \n- \n %7D else i\n@@ -444,33 +444,33 @@\n %7D else if H \n-%3C\n+%3E\n  P && F \n %3C P && F %3C H\n@@ -453,33 +453,33 @@\n  H %3E P && F \n-%3C\n+%3E\n  P && F \n %3C H %7B%0A      \n@@ -458,33 +458,33 @@\n P && F %3E P && F \n-%3C\n+%3E\n  H %7B%0A      if D \n@@ -488,33 +488,32 @@\n  D == 1 %7B%0A      \n- \n fmt.Printf(%22N%5Cn%22\n@@ -510,24 +510,27 @@\n intf(%22N%5Cn%22)%0A\n+   \n    %7D%0A   %7D el\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_20-14-08",
+            "content": "@@ -111,25 +111,24 @@\n P && F %3C H %7B\n- \n %0A      if D \n@@ -165,51 +165,8 @@\n n%22)%0A\n-      %7D  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A\n     \n@@ -255,51 +255,8 @@\n n%22)%0A\n-      %7D  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A\n     \n@@ -297,17 +297,16 @@\n  F %3E H %7B\n- \n %0A      i\n@@ -350,51 +350,8 @@\n    %7D\n-  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D\n %0A   \n@@ -404,24 +404,16 @@\n == -1 %7B%0A\n-        \n fmt.Prin\n@@ -433,52 +433,13 @@\n    %7D\n-  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A\n+%0A    \n    %7D\n@@ -450,33 +450,33 @@\n e if H %3C P && F \n-%3E\n+%3C\n  P && F %3C H %7B%0A  \n@@ -487,24 +487,25 @@\n if D == 1 %7B%0A\n+ \n       fmt.Pr\n@@ -506,33 +506,33 @@\n fmt.Printf(%22\n-S\n+N\n %5Cn%22)%0A   \n    %7D else %7B%0A\n@@ -515,24 +515,26 @@\n f(%22N%5Cn%22)%0A   \n+%7D%0A\n    %7D else %7B%0A\n@@ -531,35 +531,32 @@\n  %7D else %7B%0A      \n- \n-  \n fmt.Printf(%22N%5Cn%22\n@@ -561,23 +561,11 @@\n n%22)%0A\n-   \n    %7D%0A\n-   %7D%0A   %0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-15_20-22-03",
+            "content": "@@ -751,115 +751,8 @@\n    %7D\n- else if H %3E P && F %3C P %7B%0A   if D == 1 %7B%0A      fmt.Printf(%22S%5Cn%22)%0A   %7D else %7B%0A      fmt.Printf(%22N%5Cn%22)%0A   %7D%0A%7D\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-15_20-41-59",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -205,33 +205,32 @@\n (%22N%5Cn%22)%0A      %7D%0A\n-%0A\n    %7D else if H %3E\n@@ -269,35 +269,32 @@\n D == -1 %7B%0A      \n-   \n fmt.Printf(%22S%5Cn%22\n@@ -338,33 +338,32 @@\n (%22N%5Cn%22)%0A      %7D%0A\n-%0A\n    %7D else if H %3C\n@@ -404,34 +404,32 @@\n  == -1 %7B%0A       \n-  \n fmt.Printf(%22S%5Cn%22\n@@ -422,35 +422,32 @@\n t.Printf(%22S%5Cn%22)%0A\n-   \n    %7D  else %7B%0A   \n@@ -470,33 +470,32 @@\n (%22N%5Cn%22)%0A      %7D%0A\n-%0A\n    %7D else if H %3E\n@@ -535,33 +535,32 @@\n == -1 %7B%0A        \n- \n fmt.Printf(%22S%5Cn%22\n@@ -604,33 +604,32 @@\n (%22N%5Cn%22)%0A      %7D%0A\n-%0A\n    %7D else if H %3C\n@@ -667,35 +667,32 @@\n  D == 1 %7B%0A      \n-   \n fmt.Printf(%22S%5Cn%22\n@@ -743,17 +743,16 @@\n       %7D%0A\n-%0A\n    %7D els\n@@ -767,39 +767,26 @@\n  P && F %3C P \n-&& F %3C H %7B %0A   \n+%7B%0A\n    if D == 1\n@@ -786,35 +786,32 @@\n  D == 1 %7B%0A      \n- \n-  \n fmt.Printf(%22S%5Cn%22\n@@ -804,35 +804,32 @@\n t.Printf(%22S%5Cn%22)%0A\n-   \n    %7D else %7B%0A    \n@@ -816,35 +816,32 @@\n n%22)%0A   %7D else %7B%0A\n-   \n       fmt.Printf\n@@ -855,15 +855,14 @@\n %0A   \n-   \n+%7D%0A\n %7D%0A   \n-%7D\n %0A%7D\n+%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-15_20-43-06",
+            "content": "@@ -899,289 +899,8 @@\n    %7D\n-%0A%0A   %7D else if H %3C F && P %3C H %7B   // caso passando pelo 0%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A%0A   %7D else if F %3C H && P %3E H %7B  %0A      if D == -1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D\n %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-15_20-44-40",
+            "content": "@@ -929,16 +929,39 @@\n %3C H %7B   \n+// caso passando pelo 0\n %0A      i\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-03-15_20-44-48",
+            "content": "@@ -892,24 +892,25 @@\n n%22)%0A      %7D%0A\n+%0A\n    %7D else if\n@@ -912,39 +912,161 @@\n se if H \n-%3E P\n+%3C F\n  &&\n+ P %3C H %7B   %0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A%0A   %7D else if\n  F %3C \n-P\n+H\n  && \n-F %3C\n+P %3E\n  H %7B\n+  \n %0A      i\n@@ -1119,16 +1119,25 @@\n  else %7B%0A\n+         \n fmt.Prin\n@@ -1136,33 +1136,33 @@\n fmt.Printf(%22\n-S\n+N\n %5Cn%22)%0A   \n    %7D%0A   %7D%0A  \n@@ -1149,21 +1149,16 @@\n %5Cn%22)%0A   \n- \n-  %7D%0A\n    %7D%0A   \n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-03-15_20-49-39",
+            "content": "@@ -1023,16 +1023,18 @@\n      %7D%0A   %7D%0A   %7D\n+%0A%7D\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-03-15_20-49-49",
+            "content": "@@ -253,19 +253,17 @@\n  F %3E H %7B\n- 0\n %0A\n+\n       if\n@@ -527,18 +527,16 @@\n & F %3C H%7B\n- 0\n %0A      i\n@@ -909,16 +909,39 @@\n else if \n+H %3E P && F %3C P && F %3C H\n  %7B%0A     \n@@ -1030,139 +1030,8 @@\n    %7D\n- Else if H %3E P && F %3E P && F %3E H%7B 0%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D\n %0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-15_20-51-44",
+            "content": "@@ -249,24 +249,26 @@\n P && F %3E H %7B\n+ 0\n %0A      if D \n@@ -913,39 +913,17 @@\n else if \n-H %3E P && F %3E P && F %3E H\n+ \n %7B%0A      \n@@ -922,32 +922,33 @@\n %7B%0A      if D == \n+-\n 1 %7B%0A         fmt\n@@ -1003,17 +1003,148 @@\n       %7D%0A   %7D\n+ Else if H %3E P && F %3E P && F %3E H%7B 0%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D\n %0A   %7D\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-03-15_20-52-29",
+            "content": "@@ -89,25 +89,25 @@\n D)%0A%0A   if H \n-%3E\n+%3C\n  P && F %3C P \n@@ -108,32 +108,33 @@\n F %3C P && F %3C H %7B\n+ \n %0A      if D == -\n@@ -126,33 +126,32 @@\n       if D == -1\n- \n %7B%0A         fmt.P\n@@ -162,32 +162,33 @@\n f(%22S%5Cn%22)%0A      %7D\n+ \n  else %7B%0A        \n@@ -206,32 +206,33 @@\n (%22N%5Cn%22)%0A      %7D%0A\n+%0A\n    %7D else if H %3C\n@@ -226,25 +226,25 @@\n %7D else if H \n-%3C\n+%3E\n  P && F %3E P \n@@ -240,33 +240,33 @@\n P && F %3E P && F \n-%3C\n+%3E\n  H %7B%0A      if D \n@@ -260,32 +260,33 @@\n %7B%0A      if D == \n+-\n 1 %7B%0A         fmt\n@@ -299,32 +299,33 @@\n f(%22S%5Cn%22)%0A      %7D\n+ \n  else %7B%0A        \n@@ -343,32 +343,33 @@\n (%22N%5Cn%22)%0A      %7D%0A\n+%0A\n    %7D else if H %3C\n@@ -369,17 +369,17 @@\n  if H %3C \n-F\n+P\n  && F %3C \n@@ -388,17 +388,19 @@\n && F %3E H\n-%7B\n+ %7B \n %0A      i\n@@ -437,32 +437,33 @@\n f(%22S%5Cn%22)%0A      %7D\n+ \n  else %7B%0A        \n@@ -481,32 +481,33 @@\n (%22N%5Cn%22)%0A      %7D%0A\n+%0A\n    %7D else if H %3E\n@@ -515,37 +515,38 @@\n P && F %3E P && F \n-%3E\n+%3C\n  H\n- \n %7B\n+ 0\n %0A      if D == -\n@@ -568,32 +568,168 @@\n t.Printf(%22S%5Cn%22)%0A\n+      %7D  else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A%0A   %7D else if H %3C P && F %3E P && F %3C H %7B%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A\n       %7D else %7B%0A \n@@ -758,24 +758,25 @@\n n%22)%0A      %7D%0A\n+%0A\n    %7D else if\n@@ -776,17 +776,16 @@\n else if \n- \n H %3E P &&\n@@ -779,33 +779,33 @@\n e if H %3E P && F \n-%3E\n+%3C\n  P && F %3C H %7B%0A  \n@@ -793,32 +793,33 @@\n F %3C P && F %3C H %7B\n+ \n %0A      if D == 1\n@@ -903,10 +903,136 @@\n  %7D%0A   %7D \n-%0A\n+else if H %3E P && F %3E P && F %3E H%7B%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0Afmt.Printf(%22S%5Cn%22)%0A      %7D%0A   %7D%0A   \n %7D\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-15_20-59-29",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n   var H, P, F, D int\n   fmt.Scan(&H, &P, &F, &D)\n\n   if H > P && F < P && F < H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < F && F < P && F > H{\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if  H > P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } \n}",
+            "lines": "39"
+        }
+    ]
+}
