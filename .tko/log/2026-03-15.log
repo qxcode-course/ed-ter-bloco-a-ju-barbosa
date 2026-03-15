@@ -48,3 +48,4 @@
 2026-03-15 20:52:38, EXEC, v:1, k:ed@fuga, mode:FULL, fail:COMP
 2026-03-15 20:59:29, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:39
 2026-03-15 20:59:41, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70
+2026-03-15 21:00:20, MOVE, v:1, k:ed@fuga, mode:BACK
