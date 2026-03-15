@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-11_13-51-19",
+            "content": "@@ -10,227 +10,59 @@\n ain%0A\n-%0A\n import \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0A%0Aconst s string = %22constant%22%0A%0Afunc main() %7B%0A    fmt.Println(s)%0A%0A    const n = 500000000%0A%0A    const d = 3e20 / n%0A    fmt.Println(d)%0A%0A    fmt.Println(int64(d))%0A%0A    fmt.Println(math.Sin(n))%0A%7De\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22qxcode%22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-11_14-05-16",
+            "content": "package main\n\nimport (\n    \"fmt\"\n    \"math\"\n)\n\nconst s string = \"constant\"\n\nfunc main() {\n    fmt.Println(s)\n\n    const n = 500000000\n\n    const d = 3e20 / n\n    fmt.Println(d)\n\n    fmt.Println(int64(d))\n\n    fmt.Println(math.Sin(n))\n}e",
+            "lines": "21"
+        }
+    ]
+}
