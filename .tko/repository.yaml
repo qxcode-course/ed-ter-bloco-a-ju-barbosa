@@ -22,7 +22,7 @@ expanded:
 tasks:
   ed@pintando: '{self:1, rate:100, study:23, friend:nao}'
   ed@mumia: '{rate:100}'
-  ed@fuga: '{rate:70}'
+  ed@fuga: '{rate:100}'
 flags:
   painel: 2
   quests: 1

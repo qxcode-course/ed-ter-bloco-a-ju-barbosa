@@ -3,3 +3,8 @@
 2026-03-16 19:28:30, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:45
 2026-03-16 19:29:15, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:52
 2026-03-16 19:29:30, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:52
+2026-03-16 19:30:23, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-03-16 19:30:23, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-16 19:30:25, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-03-16 19:30:25, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-16 19:30:26, MOVE, v:1, k:ed@fuga, mode:BACK
