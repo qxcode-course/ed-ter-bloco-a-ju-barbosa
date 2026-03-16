@@ -132,8 +132,28 @@
         },
         {
             "label": "2026-03-15_20-59-29",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n   var H, P, F, D int\n   fmt.Scan(&H, &P, &F, &D)\n\n   if H > P && F < P && F < H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < F && F < P && F > H{\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if  H > P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } \n}",
+            "content": "@@ -375,35 +375,34 @@\n & F %3C P && F %3E H\n- \n %7B%0A\n+\n       if D == -1\n@@ -621,32 +621,33 @@\n  %7D%0A   %7D else if \n+ \n H %3E P && F %3E P &\n@@ -760,164 +760,6 @@\n   %7D \n-else if H %3C P && F %3C P && F %3E H %7B // %3C%3C%3C caso que faltava%0A      if D == 1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A   %7D\n %0A%7D\n-%0A\n",
             "lines": "39"
+        },
+        {
+            "label": "2026-03-16_19-28-21",
+            "content": "@@ -790,16 +790,39 @@\n F %3E H %7B \n+// %3C%3C%3C caso que faltava\n %0A      i\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-16_19-28-30",
+            "content": "@@ -781,33 +781,34 @@\n F %3C P && F %3E H %7B\n+ \n %0A\n-\n       if D == 1 \n@@ -890,148 +890,11 @@\n   %7D%0A\n-   %7D else if H %3C P && F %3E P && F %3E H %7B %0A      if D == -1 %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D%0A\n    %7D%0A\n+\n %7D%0A\n-%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-16_19-29-15",
+            "content": "@@ -957,33 +957,33 @@\n     fmt.Printf(%22\n-N\n+S\n %5Cn%22)%0A      %7D els\n@@ -999,33 +999,33 @@\n     fmt.Printf(%22\n-S\n+N\n %5Cn%22)%0A      %7D%0A   \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-16_19-29-30",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n   var H, P, F, D int\n   fmt.Scan(&H, &P, &F, &D)\n\n   if H > P && F < P && F < H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < F && F < P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F < P && F > H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F > H { \n      if D == -1 {\n         fmt.Printf(\"N\\n\")\n      } else {\n         fmt.Printf(\"S\\n\")\n      }\n   }\n}\n\n",
+            "lines": "52"
         }
     ]
 }
