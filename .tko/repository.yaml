@@ -13,22 +13,21 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@análise
-- ed@lista
-- ed@side-quests
-- ed@main-quest
 - ed@revisão
+- ed@side-quests
+- ed@lista
+- ed@main-quest
 tasks:
   ed@pintando: '{self:1, rate:100, study:23, friend:nao}'
-  ed@mumia: '{rate:100}'
-  ed@fuga: '{self:1, rate:100, study:99, friend:nao, code:1}'
+  ed@mumia: '{self:1, rate:100, study:28, friend:nao}'
+  ed@fuga: '{self:1, rate:100, study:90, friend:nao, code:1}'
   ed@pedra: '{self:1, rate:100, study:62, friend:sim}'
 flags:
-  painel: 2
+  painel: 1
   quests: 1
   tracks: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@baruel
+selected: ed@casais
