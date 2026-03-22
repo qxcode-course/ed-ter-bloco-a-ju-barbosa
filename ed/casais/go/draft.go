@@ -3,19 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	var N [50]int
+qtd := 0
+fmt.Scan(&qtd)
+animais := make([]int, qtd)
 
-	var n int
-	fmt.Scan(&n)
+solteiros := make(map[int]int)
+for i:= range animais{
+	fmt.Scan(&animais[i])
+}
+n_pares := 0
 
-	for i := 0; i < 0; i++ {
-		for j := 0; j < 0; j++ {
-			if N[i]%2 == 0 {
-				N[i] = 0
-
-			}
-		}
+for _, animal := range animais {
+	if solteiros [-animal] > 0{
+		solteiros[-animal]--
+		n_pares++
+	} else {
+		solteiros[animal]++
 	}
-
-	fmt.Printf("%v\n")
+}
+fmt.Println(n_pares)
 }
