@@ -3,14 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	var numero int
-	fmt.Scan(&numero)
+	var N [50]int
 
-	vetor := make([]int, numero)
+	var n int
+	fmt.Scan(&n)
 
-	for i := 0; i < numero; i++ {
-		fmt.Scan(&vetor[i])
+	for i := 0; i < 0; i++ {
+		for j := 0; j < 0; j++ {
+			if N[i]%2 == 0 {
+				N[i] = 0
 
+			}
+		}
 	}
 
+	fmt.Printf("%v\n")
 }
