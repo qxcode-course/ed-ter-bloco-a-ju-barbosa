@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-03-24_13-34-49",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,108 +41,35 @@\n     \n-var n, e int%0A    fmt.Scan(&n, &e)%0A    %0A    fila := make(%5B%5Dint, 1, n)%0A    mortos := make(map%5Bint%5Dint)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-28_20-38-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, e int\n    fmt.Scan(&n, &e)\n    \n    fila := make([]int, 1, n)\n    mortos := make(map[int]int)\n\n}\n",
+            "lines": "10"
         }
     ]
 }
