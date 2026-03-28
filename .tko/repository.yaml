@@ -13,10 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@main-quest
-- ed@side-quests
-- ed@revisão
-- ed@lista
+- ed@map_set
 tasks:
   ed@pintando: '{self:1, rate:100, study:23, friend:nao}'
   ed@mumia: '{self:1, rate:100, study:28, friend:nao}'
@@ -26,11 +23,11 @@ tasks:
   ed@baruel: '{self:1, rate:100, study:76, friend:nao, guided:1}'
   ed@gomos: '{self:1, rate:100, study:11, friend:nao, guided:1}'
 flags:
-  painel: 1
-  quests: 1
-  tracks: 0
+  panel: 1
+  inbox: 0
+  show_panel: 1
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@casais
+selected: ed@princesa
