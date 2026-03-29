@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_20-42-08",
+            "content": "@@ -360,17 +360,16 @@\n %0A    for\n- \n _, i := \n@@ -567,39 +567,32 @@\n  %7D %0A    for i :=\n- 0; i %3C\n  tamanho - rot; \n@@ -610,33 +610,32 @@\n    vet_rotaciona\n-n\n do = append(vet_\n@@ -689,17 +689,16 @@\n )%0A   for\n- \n _,i := r\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_20-46-10",
+            "content": "@@ -55,16 +55,20 @@\n 0%0A   rot\n+acao\n  := 0%0A%0A \n@@ -92,16 +92,20 @@\n ho, &rot\n+acao\n )%0A%0A   ve\n@@ -206,19 +206,19 @@\n  rot\n-acao\n  := rot\n+acao\n  %25 t\n@@ -233,20 +233,16 @@\n   if rot\n-acao\n  %3C 0%7B%0A  \n@@ -246,20 +246,16 @@\n %0A    rot\n-acao\n  += tama\n@@ -321,16 +321,20 @@\n   if rot\n+acao\n  == 0 %7B%0A\n@@ -474,20 +474,16 @@\n ho - rot\n-acao\n ; i %3C= t\n@@ -597,20 +597,16 @@\n ho - rot\n-acao\n ; i++ %7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_20-47-44",
+            "content": "@@ -443,24 +443,25 @@\n %7D else %7B%0A   \n+ \n for i := tam\n@@ -475,24 +475,25 @@\n rotacao; i %3C\n+=\n  tamanho; i+\n@@ -489,31 +489,26 @@\n tamanho; i++\n- \n %7B%0A\n-    \n         vet_\n@@ -561,21 +561,18 @@\n i%5D)%0A    \n-    \n %7D\n+ \n %0A    for\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_20-49-12",
+            "content": "@@ -679,25 +679,24 @@\n r%5Bi%5D)%0A    %7D%0A\n-%0A\n    fmt.Print\n@@ -770,17 +770,16 @@\n i)%0A   %7D%0A\n-%0A\n    fmt.P\n@@ -790,16 +790,12 @@\n ln(%22%5D%22)%0A\n-    \n %7D%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_20-49-54",
+            "content": "@@ -760,17 +760,16 @@\n intf(%22%25v\n- \n %22, i)%0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-51-12",
+            "content": "@@ -789,17 +789,16 @@\n rintln(%22\n- \n %5D%22)%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-51-34",
+            "content": "@@ -700,17 +700,16 @@\n rintf(%22%5B\n- \n %22)%0A   fo\n@@ -760,16 +760,17 @@\n intf(%22%25v\n+ \n %22, i)%0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-51-47",
+            "content": "@@ -789,16 +789,17 @@\n rintln(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-52-02",
+            "content": "@@ -696,24 +696,25 @@\n mt.Printf(%22%5B\n+ \n %22)%0A   for _,\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-52-10",
+            "content": "@@ -758,17 +758,16 @@\n Printf(%22\n- \n %25v%22, i)%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-52-44",
+            "content": "@@ -789,17 +789,16 @@\n rintln(%22\n- \n %5D%22)%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-52-52",
+            "content": "@@ -686,16 +686,17 @@\n    %7D%0A%0A  \n+ \n fmt.Prin\n@@ -702,32 +702,30 @@\n ntf(%22%5B%22)%0A   \n- \n for _,\n- \n i := range v\n@@ -742,28 +742,24 @@\n nando %7B%0A    \n- \n-   \n fmt.Printf(%22\n@@ -767,23 +767,22 @@\n %25v%22, i)%0A\n- \n    %7D%0A\n- \n+%0A\n    fmt.P\n@@ -798,7 +798,12 @@\n %5D%22)%0A\n+    %7D%0A\n %7D%0A\n-%7D\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-29_20-55-19",
+            "content": "@@ -395,25 +395,24 @@\n fmt.Printf(%22\n- \n %25v%22,i)%0A    %7D\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-29_20-55-57",
+            "content": "@@ -429,17 +429,16 @@\n Printf(%22\n- \n %5D%22)%0A   %7D\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-29_20-56-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   tamanho := 0\n   rot := 0\n\n   fmt.Scan(&tamanho, &rot)\n\n   vetor := make([]int, tamanho)\n\n   for i := 0; i < tamanho; i++{\n    fmt.Scan(&vetor[i])\n   }\n\n   rotacao := rot % tamanho\n   if rotacao < 0{\n    rotacao += tamanho\n   }\n\n   vet_rotacionando := make([]int, 0, tamanho)\n\n   if rot == 0 {\n    fmt.Printf(\"[\")\n    for _, i := range vetor {\n        fmt.Printf(\" %v\",i)\n    }\n    fmt.Printf(\" ]\")\n   } else {\n   for i := tamanho - rotacao; i < tamanho; i++ {\n            vet_rotacionando = append(vet_rotacionando, vetor[i])\n        }\n    for i := 0; i < tamanho - rotacao; i++ {\n        vet_rotacionando = append(vet_rotacionando, vetor[i])\n    }\n\n  fmt.Printf(\"[\")\n    for _, i := range vet_rotacionando {\n        fmt.Printf(\" %v\", i)\n    }\n    fmt.Println(\" ]\")\n}\n}",
+            "lines": "42"
+        }
+    ]
+}
