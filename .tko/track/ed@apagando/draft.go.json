@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_00-35-00",
+            "content": "@@ -358,13 +358,192 @@\n   %7D%0A%0A   \n+saiu := make(map%5Bint%5Dbool)%0A   for _, id := range id_sairam %7B%0A      saiu%5Bid%5D = true%0A   %7D%0A%0A   for _, id := range id_inicial%7B%0A    if !saiu%5Bid%5D%7B%0A        fmt.Print(id, %22 %22)%0A     %7D%0A   %7D\n %0A%0A%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-29_00-37-02",
+            "content": "@@ -362,426 +362,9 @@\n %0A   \n- saiu := make(map%5Bint%5Dbool)%0A%0A    for _, sairam := range id_sairam %7B%0A        if saiu%5Bsairam%5D %7B%0A          saiu%5Bsairam%5D = true%0A        %7D %0A    %7D%0A%0A    fila_final := (%5B%5Dint, 0)%0A%0A    for _, sairam := range id_inicial %7B%0A        if !saiu%5Bid%5D %7B%0A            fila_final = append(fila_final, id)%0A        %7D%0A    %7D%0A%0A    for i, id := range fila_final %7B%0A        if i %3E 0 %7B%0A            fmt.Printf(%22%22)%0A        %7D%0A        fmt.Print(id)%0A    %7D\n+%0A%0A\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-29_00-54-00",
+            "content": "@@ -514,28 +514,24 @@\n la_final := \n-make\n (%5B%5Dint, 0)%0A%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_00-54-56",
+            "content": "@@ -162,19 +162,14 @@\n  := \n-0; i %3C len(\n+range \n id_i\n@@ -178,15 +178,8 @@\n cial\n-); i++ \n %7B%0A  \n@@ -587,30 +587,26 @@\n    if !saiu%5B\n-sairam\n+id\n %5D %7B%0A        \n@@ -641,22 +641,18 @@\n _final, \n-sairam\n+id\n )%0A      \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_00-58-32",
+            "content": "@@ -794,23 +794,16 @@\n Print(id\n-_sairam\n )%0A    %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_00-58-49",
+            "content": "@@ -693,22 +693,18 @@\n  for i, \n-sairam\n+id\n  := rang\n@@ -792,16 +792,19 @@\n t.Print(\n+id_\n sairam)%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_00-59-05",
+            "content": "@@ -430,32 +430,58 @@\n nge id_sairam %7B%0A\n+        if saiu%5Bsairam%5D %7B%0A\n           saiu%5Bs\n@@ -502,16 +502,18 @@\n         \n+%7D \n %0A    %7D%0A%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-00-25",
+            "content": "@@ -741,11 +741,8 @@\n tf(%22\n- %5Cn\n %22)%0A \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-29_01-00-41",
+            "content": "@@ -738,16 +738,18 @@\n rintf(%22 \n+%5Cn\n %22)%0A     \n@@ -774,10 +774,8 @@\n rint\n-ln\n (sai\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-29_01-01-36",
+            "content": "@@ -768,16 +768,18 @@\n mt.Print\n+ln\n (sairam)\n@@ -789,24 +789,6 @@\n   %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-29_01-02-14",
+            "content": "@@ -783,21 +783,16 @@\n )%0A    %7D%0A\n-    %0A\n     fmt.\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-04-02",
+            "content": "@@ -734,16 +734,17 @@\n mt.Print\n+f\n (%22 %22)%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_01-05-02",
+            "content": "@@ -736,17 +736,16 @@\n .Print(%22\n- \n  %22)%0A    \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_01-05-18",
+            "content": "@@ -739,16 +739,8 @@\n int(\n-sairam, \n %22  %22\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_01-08-29",
+            "content": "@@ -735,16 +735,24 @@\n t.Print(\n+sairam, \n %22  %22)%0A  \n@@ -787,24 +787,29 @@\n iram)%0A    %7D%0A\n+    %0A\n     fmt.Prin\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-29_01-08-52",
+            "content": "@@ -736,16 +736,17 @@\n .Print(%22\n+ \n  %22)%0A    \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-09-13",
+            "content": "@@ -736,16 +736,17 @@\n .Print(%22\n+ \n %22)%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-09-25",
+            "content": "@@ -736,17 +736,16 @@\n .Print(%22\n- \n %22)%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-09-33",
+            "content": "@@ -662,47 +662,71 @@\n     \n-saida := fmt.Sprintf(%22%25v%22, fila_final)%0A\n+for i, sairam := range fila_final %7B%0A        if i %3E 0 %7B%0A        \n     \n@@ -738,22 +738,55 @@\n rint\n-f\n (%22\n-%25v%22, saida)\n+ %22)%0A        %7D%0A        fmt.Print(sairam)%0A    %7D\n %0A   \n@@ -798,15 +798,12 @@\n Println(\n-%22 %22\n )%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-29_01-12-52",
+            "content": "@@ -716,32 +716,20 @@\n ntf(\n-saida%5B1 : len(\n+%22%25v%22, \n saida)\n--1%5D)\n %0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_01-13-50",
+            "content": "@@ -165,28 +165,30 @@\n  0; i %3C \n-fila\n+len(id\n _inicial\n ; i++ %7B%0A\n@@ -179,16 +179,17 @@\n _inicial\n+)\n ; i++ %7B%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-29_01-18-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var fila_inicial, fila_sairam int\n\n    fmt.Scan(&fila_inicial)\n    id_inicial := make([]int, fila_inicial) \n    for i := 0; i < fila_inicial; i++ {\n        fmt.Scan(&id_inicial[i])\n    }\n\n    fmt.Scan(&fila_sairam)\n    id_sairam := make([]int, fila_sairam)\n    for i := range id_sairam {\n        fmt.Scan(&id_sairam[i])\n    }\n\n    saiu := make(map[int]bool)\n\n    for _, sairam := range id_sairam {\n          saiu[sairam] = true\n        \n    }\n\n    fila_final := make([]int, 0)\n\n    for _, sairam := range id_inicial {\n        if !saiu[sairam] {\n            fila_final = append(fila_final, sairam)\n        }\n    }\n\n    saida := fmt.Sprintf(\"%v\", fila_final)\n    fmt.Printf(saida[1 : len(saida)-1])\n    fmt.Println(\" \")\n}\n",
+            "lines": "36"
+        }
+    ]
+}

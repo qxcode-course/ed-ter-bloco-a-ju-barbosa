@@ -1,0 +1,38 @@
+2026-03-29 00:35:00, EXEC, v:1, k:ed@apagando, mode:FREE, size:30
+2026-03-29 00:35:59, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0
+2026-03-29 00:36:02, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-29 00:36:04, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-29 00:36:09, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0
+2026-03-29 00:36:54, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-29 00:36:58, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-29 00:37:02, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:21
+2026-03-29 00:37:11, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0
+2026-03-29 00:54:00, EXEC, v:1, k:ed@apagando, mode:FULL, size:40, fail:COMP
+2026-03-29 00:54:04, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-03-29 00:54:07, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-03-29 00:54:07, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-03-29 00:54:09, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-29 00:54:11, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-29 00:54:18, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-03-29 00:54:56, EXEC, v:1, k:ed@apagando, mode:FULL, size:40, fail:COMP
+2026-03-29 00:58:32, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 00:58:49, EXEC, v:1, k:ed@apagando, mode:FULL, size:40, fail:COMP
+2026-03-29 00:59:05, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:00:25, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:39
+2026-03-29 01:00:41, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:39
+2026-03-29 01:01:36, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:39
+2026-03-29 01:02:14, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:04:02, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:41
+2026-03-29 01:05:02, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:41
+2026-03-29 01:05:18, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:41
+2026-03-29 01:08:29, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:41
+2026-03-29 01:08:52, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:09:13, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:09:25, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:09:33, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:40
+2026-03-29 01:12:52, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:36
+2026-03-29 01:13:50, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:36
+2026-03-29 01:14:17, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-29 01:16:01, SELF, v:1, k:ed@apagando, self:1, rate:100, study:100, concept:1, problem:1
+2026-03-29 01:17:13, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-29 01:18:12, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:36
