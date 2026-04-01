@@ -5,3 +5,18 @@
 2026-04-01 02:40:54, EXEC, v:1, k:ed@buscas, mode:FULL, rate:22, size:26
 2026-04-01 02:42:16, EXEC, v:1, k:ed@buscas, mode:FULL, rate:100, size:26
 2026-04-01 02:42:41, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-04-01 02:53:06, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-04-01 02:53:26, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-04-01 13:14:24, SELF, v:1, k:ed@buscas, self:1, rate:100, study:45, friend:cecilia, concept:1
+2026-04-01 13:52:51, MOVE, v:1, k:ed@triangulo, mode:DOWN
+2026-04-01 13:52:53, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-04-01 13:53:19, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-04-01 13:53:23, MOVE, v:1, k:ed@treinando, mode:DOWN
+2026-04-01 13:53:24, MOVE, v:1, k:ed@treinando, mode:PICK
+2026-04-01 13:53:46, MOVE, v:1, k:ed@treinando, mode:BACK
+2026-04-01 13:55:30, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-04-01 13:58:23, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-04-01 13:58:31, MOVE, v:1, k:ed@mdc, mode:DOWN
+2026-04-01 13:58:32, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:06:13, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:21
+2026-04-01 14:07:38, MOVE, v:1, k:ed@mdc, mode:BACK
