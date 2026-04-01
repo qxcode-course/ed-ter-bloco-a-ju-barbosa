@@ -72,7 +72,22 @@
         },
         {
             "label": "2026-03-29_20-56-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   tamanho := 0\n   rot := 0\n\n   fmt.Scan(&tamanho, &rot)\n\n   vetor := make([]int, tamanho)\n\n   for i := 0; i < tamanho; i++{\n    fmt.Scan(&vetor[i])\n   }\n\n   rotacao := rot % tamanho\n   if rotacao < 0{\n    rotacao += tamanho\n   }\n\n   vet_rotacionando := make([]int, 0, tamanho)\n\n   if rot == 0 {\n    fmt.Printf(\"[\")\n    for _, i := range vetor {\n        fmt.Printf(\" %v\",i)\n    }\n    fmt.Printf(\" ]\")\n   } else {\n   for i := tamanho - rotacao; i < tamanho; i++ {\n            vet_rotacionando = append(vet_rotacionando, vetor[i])\n        }\n    for i := 0; i < tamanho - rotacao; i++ {\n        vet_rotacionando = append(vet_rotacionando, vetor[i])\n    }\n\n  fmt.Printf(\"[\")\n    for _, i := range vet_rotacionando {\n        fmt.Printf(\" %v\", i)\n    }\n    fmt.Println(\" ]\")\n}\n}",
+            "content": "@@ -789,23 +789,24 @@\n    fmt.Print\n-f\n+ln\n (%22 %5D%22)%0A%7D%0A%7D\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-31_21-20-26",
+            "content": "@@ -802,10 +802,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-31_21-23-36",
+            "content": "@@ -431,18 +431,16 @@\n intf(%22 %5D\n-%5Cn\n %22)%0A   %7D \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-31_21-24-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   tamanho := 0\n   rot := 0\n\n   fmt.Scan(&tamanho, &rot)\n\n   vetor := make([]int, tamanho)\n\n   for i := 0; i < tamanho; i++{\n    fmt.Scan(&vetor[i])\n   }\n\n   rotacao := rot % tamanho\n   if rotacao < 0{\n    rotacao += tamanho\n   }\n\n   vet_rotacionando := make([]int, 0, tamanho)\n\n   if rot == 0 {\n    fmt.Printf(\"[\")\n    for _, i := range vetor {\n        fmt.Printf(\" %v\",i)\n    }\n    fmt.Printf(\" ]\\n\")\n   } else {\n   for i := tamanho - rotacao; i < tamanho; i++ {\n            vet_rotacionando = append(vet_rotacionando, vetor[i])\n        }\n    for i := 0; i < tamanho - rotacao; i++ {\n        vet_rotacionando = append(vet_rotacionando, vetor[i])\n    }\n\n  fmt.Printf(\"[\")\n    for _, i := range vet_rotacionando {\n        fmt.Printf(\" %v\", i)\n    }\n    fmt.Printf(\" ]\\n\")\n}\n}",
             "lines": "42"
         }
     ]

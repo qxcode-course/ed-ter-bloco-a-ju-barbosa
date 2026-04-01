@@ -1,26 +1,34 @@
 package main
 import "fmt"
+
+func print_fila(fila[]int, espada int) {
+    fmt.print(" ")
+
+    for i, elemento
+}
+
+func procurar_vivo(){
+    for {
+        if fila[espada] = len(fila)
+        if fila[espada != 0 
+        return espada
+        }
+    }
+}
 func main() {
-    var n, e int
-    fmt.Scan(&n, &e)
-    
-    fila := make([]int, 1, n)
-    mortos := make(map[int]bool)
+    var qtd, espada int
+    fmt.Scan(&qtd, &espada)
     
 
-    for i := range fila {
-        fmt.Scan(&fila[i])
-    }
-
-    for _, pessoa := range fila {
-        if mortos[pessoa] {
-           
-        } else {
-            mortos[pessoa] = true
-            
-        }
-        }
-    }
     
+for i := 1; i <= qtd; i++{
+    fila = append(fila, i)
+}
+
+   espada -= 1
+    for range qtd -1{
+        print_fila := procurar_vivo(fila, espada)
+        
+    }
 
 }

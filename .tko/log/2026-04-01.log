@@ -1,0 +1,7 @@
+2026-04-01 02:09:15, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-04-01 02:38:51, EXEC, v:1, k:ed@buscas, mode:FULL, size:26, fail:COMP
+2026-04-01 02:39:36, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:26
+2026-04-01 02:40:28, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:26
+2026-04-01 02:40:54, EXEC, v:1, k:ed@buscas, mode:FULL, rate:22, size:26
+2026-04-01 02:42:16, EXEC, v:1, k:ed@buscas, mode:FULL, rate:100, size:26
+2026-04-01 02:42:41, MOVE, v:1, k:ed@buscas, mode:BACK

@@ -24,7 +24,7 @@ func main() {
     for _, i := range vetor {
         fmt.Printf(" %v",i)
     }
-    fmt.Printf(" ]")
+    fmt.Printf(" ]\n")
    } else {
    for i := tamanho - rotacao; i < tamanho; i++ {
             vet_rotacionando = append(vet_rotacionando, vetor[i])
@@ -37,6 +37,6 @@ func main() {
     for _, i := range vet_rotacionando {
         fmt.Printf(" %v", i)
     }
-    fmt.Println(" ]")
+    fmt.Printf(" ]\n")
 }
 }

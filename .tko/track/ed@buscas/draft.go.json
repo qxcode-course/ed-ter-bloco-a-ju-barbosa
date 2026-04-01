@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_02-38-51",
+            "content": "@@ -236,16 +236,20 @@\n   matriz\n+ := \n %5BConsult\n@@ -311,25 +311,24 @@\n tring, busca\n-s\n )%0A   resulta\n@@ -350,17 +350,16 @@\n t, busca\n-s\n )%0A%0A   fo\n@@ -377,17 +377,16 @@\n  %3C busca\n-s\n ; i++%7B%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_02-39-36",
+            "content": "@@ -517,26 +517,8 @@\n aida\n-%5B1 : len(saida)-1%5D\n )%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_02-40-28",
+            "content": "@@ -473,17 +473,18 @@\n t.Sprint\n-f\n+ln\n (%22%25v%22, r\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_02-40-54",
+            "content": "@@ -209,16 +209,18 @@\n fmt.Scan\n+ln\n (&Consul\n@@ -395,16 +395,18 @@\n fmt.Scan\n+ln\n (&Busca%5B\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_02-42-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   consultas, buscas := 0,0\n\n   fmt.Scan(&consultas)\n   Consulta := make([]string, consultas)\n   matriz := make(map[string]int)\n\n   for i := 0; i < consultas; i++{\n    fmt.Scan(&Consulta[i])\n    matriz[Consulta[i]]++\n   }\n\n   fmt.Scan(&buscas)\n   Busca := make([]string, buscas)\n   resultado := make([]int, buscas)\n\n   for i := 0; i < buscas; i++{\n    fmt.Scan(&Busca[i])\n    resultado[i] = matriz[Busca[i]]\n   }\n\n   saida := fmt.Sprintf(\"%v\", resultado)\n   fmt.Println(saida[1 : len(saida)-1])\n}\n",
+            "lines": "26"
+        }
+    ]
+}
