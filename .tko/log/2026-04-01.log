@@ -20,3 +20,11 @@
 2026-04-01 13:58:32, MOVE, v:1, k:ed@mdc, mode:PICK
 2026-04-01 14:06:13, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:21
 2026-04-01 14:07:38, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:09:36, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:09:40, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:09:41, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:09:42, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:09:43, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:10:01, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100
+2026-04-01 14:10:04, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:10:39, SELF, v:1, k:ed@mdc, self:1, rate:100, study:10, friend:cecilia e rayca
