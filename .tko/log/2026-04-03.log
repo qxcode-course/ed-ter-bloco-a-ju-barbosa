@@ -43,3 +43,6 @@
 2026-04-03 23:44:24, EXEC, v:1, k:ed@triangulo, mode:FULL, rate:0, size:62
 2026-04-03 23:45:07, EXEC, v:1, k:ed@triangulo, mode:FULL, rate:100, size:62
 2026-04-03 23:45:35, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-04-03 23:46:58, MOVE, v:1, k:ed@treinando, mode:PICK
+2026-04-03 23:47:06, MOVE, v:1, k:ed@treinando, mode:BACK
+2026-04-03 23:47:54, SELF, v:1, k:ed@triangulo, self:1, rate:100, study:46, debug:1
