@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-03_02-48-22",
+            "content": "@@ -19,16 +19,34 @@\n t %22fmt%22%0A\n+func main() %7B%0A    \n %0A    fun\n@@ -63,16 +63,20 @@\n num int)\n+ int\n  %7B%0A     \n@@ -127,16 +127,19 @@\n   %7D%0A    \n+int\n  divisao\n@@ -139,17 +139,16 @@\n divisao \n-:\n = num/2%0A\n@@ -155,16 +155,18 @@\n     \n+int\n  resto \n-:\n = nu\n@@ -205,17 +205,18 @@\n mt.Print\n-f\n+ln\n (%22%25v %25v%22\n@@ -238,16 +238,18 @@\n o)%0A    %7D\n+%0A%7D\n %0A%0A    fu\n@@ -310,16 +310,27 @@\n         \n+fmt.Println\n (dividir\n@@ -342,9 +342,10 @@\n )%0A    %7D%0A\n+%7D\n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-03_03-00-04",
+            "content": "@@ -191,10 +191,8 @@\n v %25v\n-%5Cn\n %22, d\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-03_03-00-18",
+            "content": "package main\nimport \"fmt\"\n\n    func dividir(num int) {\n        if (num == 0) {\n            return\n        }\n     divisao := num/2\n     resto := num % 2\n    dividir(divisao)\n    fmt.Printf(\"%v %v\\n\", divisao, resto)\n    }\n\n    func main(){\n        var num int\n        fmt.Scan(&num)\n        (dividir(num))\n    }\n\n",
+            "lines": "19"
+        }
+    ]
+}
