@@ -21,3 +21,4 @@
 2026-04-06 19:51:50, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:58
 2026-04-06 19:52:46, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100, size:58
 2026-04-06 19:52:59, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-06 19:55:26, SELF, v:1, k:ed@vetequals, self:1, rate:100, study:34, concept:1
