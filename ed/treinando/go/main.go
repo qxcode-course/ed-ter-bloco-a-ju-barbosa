@@ -10,7 +10,14 @@ import (
 
 func tostr(vet []int) string {
 	_ = vet
-	return ""
+	i := 0
+	if len(vet) != i{
+		final := 
+		return final
+	}
+
+	for
+	return tostr(vet)
 }
 
 func tostrrev(vet []int) string {
