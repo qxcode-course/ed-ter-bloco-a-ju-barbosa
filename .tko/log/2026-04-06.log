@@ -51,3 +51,4 @@
 2026-04-06 22:52:57, SELF, v:1, k:ed@queimada, self:1, rate:100, study:45, guided:1
 2026-04-06 22:53:13, MOVE, v:1, k:ed@labirinto, mode:DOWN
 2026-04-06 22:53:14, MOVE, v:1, k:ed@labirinto, mode:PICK
+2026-04-06 22:55:53, MOVE, v:1, k:ed@labirinto, mode:BACK
