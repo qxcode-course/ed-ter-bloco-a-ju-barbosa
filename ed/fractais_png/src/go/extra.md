@@ -7,7 +7,7 @@
 
 ```bash
 go mod init fractais
-go get "github.com/fogleman/gg"
+go get "githucode 
 tko run *.go
 
 # Abra o arquivo `tree.png` para ver desenho gerado
