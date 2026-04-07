@@ -12,7 +12,7 @@ func ri(inf, sup int) float64 {
 func arvere(pen *Pen, dist float64) {
 	if dist < 10 {
 		if ri(0, 50) == 0 {
-			pen.SetRGB(255, 0, 0)
+			pen.SetRGB(400, 0, 400)
 			pen.FillCircle(10)
 		}
 		return

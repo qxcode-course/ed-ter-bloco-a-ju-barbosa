@@ -2,3 +2,6 @@
 2026-04-07 13:34:39, MOVE, v:1, k:ed@fractais_png, mode:BACK
 2026-04-07 13:46:12, EXEC, v:1, k:src@go, mode:FREE, size:136
 2026-04-07 13:46:28, EXEC, v:1, k:src@go, mode:FREE
+2026-04-07 19:55:12, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-07 19:56:07, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-04-07 19:56:21, SELF, v:1, k:ed@fractais_png, self:1, guided:1
