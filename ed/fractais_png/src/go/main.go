@@ -9,7 +9,7 @@ func ri(inf, sup int) float64 {
 	return float64(rand.Intn(sup-inf+1) + inf)
 }
 
-func arvere(pen *Pen, dist float64) {
+/* func arvere(pen *Pen, dist float64) {
 	if dist < 10 {
 		if ri(0, 50) == 0 {
 			pen.SetRGB(400, 0, 400)
@@ -31,12 +31,36 @@ func arvere(pen *Pen, dist float64) {
 	pen.SetRGB(0, 0, 0)
 	pen.Walk(-dist)
 }
+	*/
 
-func main() {
+/*func main() {
 	pen := NewPen(600, 500)
 	pen.SetHeading(90)
 	pen.SetPosition(300, 500)
 	arvere(pen, 80)
 	pen.SavePNG("tree.png")
 	fmt.Println("PNG file created successfully.")
+}
+	*/
+func embua(pen * Pen, dist float64) {
+		if dist < 10{
+			return
+		}
+		
+		pen.SetRGB(ri(0, 255), ri(0, 255), ri(0, 255))
+		pen.Walk(dist)
+		pen.Right(90)
+		embua(pen, dist-7)
+
+	}
+func main(){
+	pen := NewPen(500, 500)
+	pen.SetPosition(0, 0)
+	pen.FillSquare(500, 500)
+	pen.SetRGB(250, 200, 400)
+	pen.SetPosition(0, 0) 
+	embua(pen, 500)
+	
+	pen.SavePNG("Espiral.png")
+	fmt.Println("PNG fille created successfully")
 }
