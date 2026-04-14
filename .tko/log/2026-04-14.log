@@ -174,3 +174,5 @@
 2026-04-14 01:54:34, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:167
 2026-04-14 01:54:42, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:167
 2026-04-14 01:54:59, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0, size:167
+2026-04-14 01:55:33, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-04-14 01:56:55, SELF, v:1, k:ed@fractais_png, self:1, rate:20, study:171, guided:1
