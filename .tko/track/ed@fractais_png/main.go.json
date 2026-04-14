@@ -492,8 +492,278 @@
         },
         {
             "label": "2026-04-14_00-40-58",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n)\n\nfunc ri(inf, sup int) float64 {\n\treturn float64(rand.Intn(sup-inf+1) + inf)\n}\n\n/* func arvere(pen *Pen, dist float64) {\n\tif dist < 10 {\n\t\tif ri(0, 50) == 0 {\n\t\t\tpen.SetRGB(400, 0, 400)\n\t\t\tpen.FillCircle(10)\n\t\t}\n\t\treturn\n\t}\n\tang_dir := ri(10, 40)\n\tang_esq := ri(10, 40)\n\n\tpen.SetLineWidth(dist / 5)\n\tpen.SetRGB(0, 0, 0)\n\tpen.Walk(dist)\n\tpen.Right(ang_dir)\n\tarvere(pen, dist*(ri(80, 85)/100))\n\tpen.Left(ang_dir + ang_esq)\n\tarvere(pen, dist*(ri(80, 85)/100))\n\tpen.Right(ang_esq)\n\tpen.SetRGB(0, 0, 0)\n\tpen.Walk(-dist)\n}\n\t*/\n\n/*func main() {\n\tpen := NewPen(600, 500)\n\tpen.SetHeading(90)\n\tpen.SetPosition(300, 500)\n\tarvere(pen, 80)\n\tpen.SavePNG(\"tree.png\")\n\tfmt.Println(\"PNG file created successfully.\")\n}\n\t*/\nfunc embua(pen * Pen, dist float64) {\n\t\tif dist < 10{\n\t\t\treturn\n\t\t}\n\t\t\n\t\tpen.SetRGB(ri(0, 255), ri(0, 255), ri(0, 255))\n\t\tpen.Walk(dist)\n\t\tpen.Right(90)\n\t\tembua(pen, dist-7)\n\n\t}\nfunc main(){\n\tpen := NewPen(500, 500)\n\tpen.SetPosition(0, 0)\n\tpen.FillSquare(500, 500)\n\tpen.SetRGB(250, 200, 400)\n\tpen.SetPosition(0, 0) \n\tembua(pen, 500)\n\t\n\tpen.SavePNG(\"Espiral.png\")\n\tfmt.Println(\"PNG fille created successfully\")\n}\n",
+            "content": "@@ -1096,14 +1096,15 @@\n NG(%22\n-Arvore\n+Espiral\n .png\n",
             "lines": "66"
+        },
+        {
+            "label": "2026-04-14_01-28-46",
+            "content": "@@ -820,25 +820,108 @@\n %09%0A%09%09\n-ang := 30.0%0A%09%09fat\n+pen.SetRGB(ri(0, 255), ri(0, 255), ri(0, 255))%0A%09%09pen.Walk(dist)%0A%09%09pen.Right(90)%0A%09%09embua(pen, dist-7)\n %0A%0A%09%7D\n@@ -971,39 +971,41 @@\n .Set\n-Heading(90)%0A%09pen.SetPosition(25\n+Position(0, 0)%0A%09pen.FillSquare(50\n 0, 5\n@@ -1035,16 +1035,40 @@\n 0, 400)%0A\n+%09pen.SetPosition(0, 0) %0A\n %09embua(p\n@@ -1075,10 +1075,10 @@\n en, \n-1\n 5\n+0\n 0)%0A%09\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-04-14_01-31-23",
+            "content": "@@ -814,16 +814,35 @@\n %0A%09%09%7D%0A%09%09%0A\n+%09%09ang := 30.0%0A%09%09fat\n %0A%0A%09%7D%0Afun\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-14_01-31-33",
+            "content": "@@ -818,177 +818,8 @@\n %0A%09%09%0A\n-%09%09ang := 30.0%0A%09%09fator := 0.%0A%09%09pen.Walk(dist)%0A%09%09pen.Right(ang)%0A%09%09embua(pen, dist*fator)%0A%09%09pen.Right(-2 * ang)%0A%09%09embua(pen, dist*fator)%0A%09%09pen.Right(ang)%0A%09%09pen.Walk(-dist)%0A\n %0A%0A%09%7D\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-04-14_01-35-14",
+            "content": "@@ -1113,17 +1113,17 @@\n a(pen, 1\n-3\n+5\n 0)%0A%09%0A%09pe\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-14_01-35-53",
+            "content": "@@ -1073,16 +1073,43 @@\n 0, 500)%0A\n+%09pen.SetRGB(250, 200, 400)%0A\n %09embua(p\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-14_01-36-13",
+            "content": "@@ -841,17 +841,16 @@\n or := 0.\n-8\n %0A%09%09pen.W\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-36-43",
+            "content": "@@ -843,12 +843,11 @@\n  := \n-2\n 0.\n-0\n+8\n %0A%09%09p\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-37-05",
+            "content": "@@ -843,11 +843,12 @@\n  := \n+2\n 0.\n-9\n+0\n %0A%09%09p\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-37-16",
+            "content": "@@ -827,9 +827,9 @@\n  := \n-7\n+3\n 0.0%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-37-29",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-3\n+7\n 0.0%0A%09%09fa\n@@ -841,17 +841,17 @@\n or := 0.\n-8\n+9\n %0A%09%09pen.W\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-37-57",
+            "content": "@@ -1086,18 +1086,18 @@\n ua(pen, \n+1\n 3\n-0\n 0)%0A%09%0A%09pe\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-41-57",
+            "content": "@@ -1090,10 +1090,10 @@\n en, \n-11\n+30\n 0)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-42-52",
+            "content": "@@ -1087,17 +1087,17 @@\n a(pen, 1\n-0\n+1\n 0)%0A%09%0A%09pe\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-43-00",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-2\n+3\n 0.0%0A%09%09fa\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-43-14",
+            "content": "@@ -845,9 +845,9 @@\n = 0.\n-7\n+8\n %0A%09%09p\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-43-34",
+            "content": "@@ -842,17 +842,16 @@\n r := 0.7\n-7\n %0A%09%09pen.W\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-43-52",
+            "content": "@@ -841,17 +841,18 @@\n or := 0.\n-8\n+77\n %0A%09%09pen.W\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-43-59",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-8\n+2\n 0.0%0A%09%09fa\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-44-09",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-4\n+8\n 0.0%0A%09%09fa\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-44-26",
+            "content": "@@ -845,9 +845,9 @@\n = 0.\n-7\n+8\n %0A%09%09p\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-44-44",
+            "content": "@@ -841,17 +841,17 @@\n or := 0.\n-8\n+7\n %0A%09%09pen.W\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-45-41",
+            "content": "@@ -1021,14 +1021,14 @@\n Pen(\n-7\n+5\n 00, \n-9\n+5\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-45-55",
+            "content": "@@ -1018,17 +1018,17 @@\n NewPen(7\n-5\n+0\n 0, 900)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-46-09",
+            "content": "@@ -1022,18 +1022,17 @@\n en(750, \n-10\n+9\n 00)%0A%09pen\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-46-21",
+            "content": "@@ -1022,17 +1022,18 @@\n en(750, \n-9\n+10\n 00)%0A%09pen\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-46-29",
+            "content": "@@ -1018,17 +1018,17 @@\n NewPen(7\n-0\n+5\n 0, 900)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-46-45",
+            "content": "@@ -1017,17 +1017,17 @@\n  NewPen(\n-5\n+7\n 00, 900)\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-46-53",
+            "content": "@@ -1022,17 +1022,17 @@\n en(500, \n-6\n+9\n 00)%0A%09pen\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-47-02",
+            "content": "@@ -1069,17 +1069,17 @@\n on(250, \n-8\n+5\n 00)%0A%09emb\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-47-29",
+            "content": "@@ -1068,14 +1068,14 @@\n ion(\n-375, 5\n+250, 8\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-47-46",
+            "content": "@@ -1064,19 +1064,19 @@\n osition(\n-400\n+375\n , 500)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-47-55",
+            "content": "@@ -1069,17 +1069,17 @@\n on(400, \n-4\n+5\n 00)%0A%09emb\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-01",
+            "content": "@@ -1068,16 +1068,14 @@\n ion(\n-10\n+4\n 00, \n-10\n+4\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-13",
+            "content": "@@ -1068,14 +1068,16 @@\n ion(\n-6\n+10\n 00, \n-6\n+10\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-25",
+            "content": "@@ -1068,14 +1068,14 @@\n ion(\n-5\n+6\n 00, \n-5\n+6\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-35",
+            "content": "@@ -1018,25 +1018,25 @@\n NewPen(500, \n-5\n+6\n 00)%0A%09pen.Set\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-43",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-3\n+4\n 0.0%0A%09%09fa\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-48-53",
+            "content": "@@ -1087,17 +1087,17 @@\n a(pen, 1\n-6\n+0\n 0)%0A%09%0A%09pe\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-49-10",
+            "content": "@@ -823,17 +823,17 @@\n %09ang := \n-4\n+3\n 0.0%0A%09%09fa\n@@ -1021,9 +1021,9 @@\n Pen(\n-7\n+5\n 00, \n@@ -1068,10 +1068,10 @@\n ion(\n-2\n 5\n+0\n 0, 5\n@@ -1087,17 +1087,17 @@\n a(pen, 1\n-0\n+6\n 0)%0A%09%0A%09pe\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-49-31",
+            "content": "@@ -1017,17 +1017,17 @@\n  NewPen(\n-5\n+7\n 00, 500)\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-49-41",
+            "content": "@@ -827,10 +827,10 @@\n  := \n-21\n+40\n .0%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-50-02",
+            "content": "@@ -1022,17 +1022,17 @@\n en(500, \n-9\n+5\n 00)%0A%09pen\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-51-15",
+            "content": "@@ -1017,17 +1017,17 @@\n  NewPen(\n-9\n+5\n 00, 900)\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-51-29",
+            "content": "@@ -1064,18 +1064,18 @@\n osition(\n+2\n 5\n-0\n 0, 500)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-51-42",
+            "content": "@@ -1068,15 +1068,15 @@\n ion(\n-4\n 5\n+0\n 0, \n-4\n 5\n+0\n 0)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-52-01",
+            "content": "@@ -1073,10 +1073,10 @@\n 50, \n-8\n 4\n+5\n 0)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-52-25",
+            "content": "@@ -1021,14 +1021,14 @@\n Pen(\n-8\n+9\n 00, \n-8\n+9\n 00)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-52-42",
+            "content": "@@ -1021,14 +1021,14 @@\n Pen(\n-6\n+8\n 00, \n-6\n+8\n 00)%0A\n@@ -1068,14 +1068,14 @@\n ion(\n-3\n+4\n 50, \n-3\n+8\n 40)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-52-59",
+            "content": "@@ -1070,17 +1070,17 @@\n n(350, 3\n-5\n+4\n 0)%0A%09embu\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-53-06",
+            "content": "@@ -1021,14 +1021,14 @@\n Pen(\n-8\n+6\n 00, \n-8\n+6\n 00)%0A\n@@ -1068,15 +1068,15 @@\n ion(\n-400, 40\n+350, 35\n 0)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-54-04",
+            "content": "@@ -1069,17 +1069,17 @@\n on(400, \n-3\n+4\n 00)%0A%09emb\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-54-34",
+            "content": "@@ -1069,17 +1069,17 @@\n on(400, \n-4\n+3\n 00)%0A%09emb\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-54-42",
+            "content": "@@ -1073,10 +1073,10 @@\n 00, \n-7\n 4\n+0\n 0)%0A%09\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-14_01-54-59",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n)\n\nfunc ri(inf, sup int) float64 {\n\treturn float64(rand.Intn(sup-inf+1) + inf)\n}\n\n/* func arvere(pen *Pen, dist float64) {\n\tif dist < 10 {\n\t\tif ri(0, 50) == 0 {\n\t\t\tpen.SetRGB(400, 0, 400)\n\t\t\tpen.FillCircle(10)\n\t\t}\n\t\treturn\n\t}\n\tang_dir := ri(10, 40)\n\tang_esq := ri(10, 40)\n\n\tpen.SetLineWidth(dist / 5)\n\tpen.SetRGB(0, 0, 0)\n\tpen.Walk(dist)\n\tpen.Right(ang_dir)\n\tarvere(pen, dist*(ri(80, 85)/100))\n\tpen.Left(ang_dir + ang_esq)\n\tarvere(pen, dist*(ri(80, 85)/100))\n\tpen.Right(ang_esq)\n\tpen.SetRGB(0, 0, 0)\n\tpen.Walk(-dist)\n}\n\t*/\n\n/*func main() {\n\tpen := NewPen(600, 500)\n\tpen.SetHeading(90)\n\tpen.SetPosition(300, 500)\n\tarvere(pen, 80)\n\tpen.SavePNG(\"tree.png\")\n\tfmt.Println(\"PNG file created successfully.\")\n}\n\t*/\nfunc embua(pen * Pen, dist float64) {\n\t\tif dist < 10{\n\t\t\treturn\n\t\t}\n\t\t\n\t\tang := 21.0\n\t\tfator := 0.8\n\t\tpen.Walk(dist)\n\t\tpen.Right(ang)\n\t\tembua(pen, dist*fator)\n\t\tpen.Right(-2 * ang)\n\t\tembua(pen, dist*fator)\n\t\tpen.Right(ang)\n\t\tpen.Walk(-dist)\n\n\n\t}\nfunc main(){\n\tpen := NewPen(800, 800)\n\tpen.SetHeading(90)\n\tpen.SetPosition(400, 740)\n\tembua(pen, 100)\n\t\n\tpen.SavePNG(\"Arvore.png\")\n\tfmt.Println(\"PNG fille created successfully\")\n}\n",
+            "lines": "70"
         }
     ]
 }

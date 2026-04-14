@@ -47,20 +47,24 @@ func embua(pen * Pen, dist float64) {
 			return
 		}
 		
-		pen.SetRGB(ri(0, 255), ri(0, 255), ri(0, 255))
+		ang := 21.0
+		fator := 0.8
 		pen.Walk(dist)
-		pen.Right(90)
-		embua(pen, dist-7)
+		pen.Right(ang)
+		embua(pen, dist*fator)
+		pen.Right(-2 * ang)
+		embua(pen, dist*fator)
+		pen.Right(ang)
+		pen.Walk(-dist)
+
 
 	}
 func main(){
-	pen := NewPen(500, 500)
-	pen.SetPosition(0, 0)
-	pen.FillSquare(500, 500)
-	pen.SetRGB(250, 200, 400)
-	pen.SetPosition(0, 0) 
-	embua(pen, 500)
+	pen := NewPen(800, 800)
+	pen.SetHeading(90)
+	pen.SetPosition(400, 740)
+	embua(pen, 100)
 	
-	pen.SavePNG("Espiral.png")
+	pen.SavePNG("Arvore.png")
 	fmt.Println("PNG fille created successfully")
 }
