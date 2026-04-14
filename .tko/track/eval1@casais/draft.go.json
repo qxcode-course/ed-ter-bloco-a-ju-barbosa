@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_13-24-49",
+            "content": "@@ -379,12 +379,44 @@\n %7D%0A     %7D\n+%0A     fmt.Print(%22%25v%22, solteiros)\n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_13-50-05",
+            "content": "@@ -210,22 +210,16 @@\n eiros :=\n- range\n  animais\n@@ -385,36 +385,6 @@\n  %7D%0A%0A\n-     fmt.Printf(%22%25v%22, pares)%0A%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_14-47-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    animais := make([]int, 0)\n    for i := range animais {\n        fmt.Scan(&animais[i])\n    }\n\n     solteiros := make(map[int]int,int)\n\n     pares := 0\n     for_, solteiros := range animais {\n        if solteiros[-animais] < 0 {\n            solteiros[-animais]--\n            pares++\n        } else {\n            solteiros[-animais]++\n        }\n     }\n\n     fmt.Printf(\"%v\", pares)\n\n}\n",
+            "lines": "24"
+        }
+    ]
+}
