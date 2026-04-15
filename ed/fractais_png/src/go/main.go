@@ -43,28 +43,33 @@ func ri(inf, sup int) float64 {
 }
 	*/
 func embua(pen * Pen, dist float64) {
-		if dist < 10{
+		if dist < 1{
 			return
 		}
 		
-		ang := 21.0
-		fator := 0.8
-		pen.Walk(dist)
-		pen.Right(ang)
-		embua(pen, dist*fator)
-		pen.Right(-2 * ang)
-		embua(pen, dist*fator)
-		pen.Right(ang)
-		pen.Walk(-dist)
+		ang := 72.0
+		fator := 0.3
 
+		for range 5{
+			pen.SetLineWidth(0.5)
+			pen.Right(ang)
+			pen.Walk(dist)
+			embua(pen, dist*fator)
+			pen.Walk(-dist)
+		}
 
 	}
 func main(){
 	pen := NewPen(800, 800)
 	pen.SetHeading(90)
-	pen.SetPosition(400, 740)
-	embua(pen, 100)
+	pen.SetPosition(0, 0)
+	pen.FillSquare(800,800)
+
+	pen.SetPosition(400, 420)
+	pen.SetRGB(210,155,253)
+	embua(pen, 280)
+
 	
-	pen.SavePNG("Arvore.png")
+	pen.SavePNG("Gelo.png")
 	fmt.Println("PNG fille created successfully")
 }
