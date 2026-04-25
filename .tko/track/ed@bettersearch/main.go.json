@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-25_22-17-13",
+            "content": "@@ -359,32 +359,8 @@\n %09%09%7D%0A\n-%09%09return false, divisor%0A\n %09%7D%0A%09\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-25_22-28-52",
+            "content": "@@ -329,35 +329,8 @@\n lse \n-if slice%5Bdivisor%5D == value \n %7B%0A%09%09\n@@ -337,20 +337,19 @@\n %09return \n-fals\n+tru\n e, divis\n@@ -354,24 +354,17 @@\n isor%0A%09%09%7D\n-else %7B%0A%09\n+%0A\n %09%09return\n@@ -356,35 +356,36 @@\n or%0A%09%09%7D%0A%09%09return \n-tru\n+fals\n e, divisor%0A%09%09%7D%0A%09\n@@ -379,20 +379,16 @@\n divisor%0A\n-%09%09%7D%0A\n %09%7D%0A%09_, _\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-25_22-44-17",
+            "content": "@@ -252,16 +252,17 @@\n ivisor -\n+ \n 1%0A%09%09%7D el\n@@ -347,34 +347,18 @@\n or%5D \n-!\n+=\n = value\n+ \n %7B\n-%0A%09%09%09divisor = fim\n %0A%09%09%09\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-25_22-50-59",
+            "content": "@@ -352,16 +352,33 @@\n  value%7B%0A\n+%09%09%09divisor = fim%0A\n %09%09%09retur\n@@ -408,14 +408,8 @@\n e %7B%0A\n-%09%09%09//%0A\n %09%09%09r\n@@ -471,22 +471,17 @@\n  false, \n-comeco\n+0\n %0A%09%0A%7D%0A%0Afu\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-25_23-08-57",
+            "content": "@@ -320,24 +320,85 @@\n  1%0A%09%09%7D else \n+if slice%5Bdivisor%5D != value%7B%0A%09%09%09return false, divisor%0A%09%09%7Delse \n %7B%0A%09%09%09//%0A%09%09%09r\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-25_23-09-19",
+            "content": "@@ -326,16 +326,22 @@\n  else %7B%0A\n+%09%09%09//%0A\n %09%09%09retur\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-25_23-09-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\tcomeco, fim := 0, len(slice)-1\n\n\tfor comeco <= fim {\n\t\tdivisor := (comeco + fim)/2\n\n\t\tif slice[divisor] > value {\n\t\t\tfim = divisor -1\n\t\t} else if slice[divisor] < value {\n\t\t\tcomeco = divisor + 1\n\t\t} else {\n\t\t\treturn true, divisor\n\t\t}\n\t}\n\t_, _ = slice, value\n\treturn false, comeco\n\t\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
+            "lines": "47"
+        }
+    ]
+}

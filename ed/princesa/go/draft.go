@@ -1,4 +1,4 @@
-package main
+jpackage main
 import "fmt"
 
 func print_fila(fila[]int, espada int) {
