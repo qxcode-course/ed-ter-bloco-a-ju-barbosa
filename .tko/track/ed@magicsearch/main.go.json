@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-26_01-25-03",
+            "content": "@@ -324,22 +324,8 @@\n %0A%09%09%09\n-return divisor\n %0A%09%09%7D\n@@ -357,22 +357,17 @@\n %09return \n-comeco\n+0\n %0A%7D%0A%0Afunc\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-26_01-25-47",
+            "content": "@@ -114,29 +114,8 @@\n t %7B%0A\n-%09_, _ = slice, value%0A\n %09com\n@@ -343,16 +343,35 @@\n %09%09%7D%0A%09%7D%0A%09\n+_, _ = slice, value\n %0A%09return\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-26_01-34-42",
+            "content": "@@ -187,20 +187,23 @@\n fim %7B%0A%09%09\n-meio\n+divisor\n  := (com\n@@ -231,66 +231,15 @@\n ice%5B\n-meio%5D == value %7B%0A%09%09%09comeco = meio + 1%0A%09%09%7D %0A%09%09if slice%5Bmeio\n+divisor\n %5D %3E \n@@ -255,20 +255,23 @@\n %09%09fim = \n-meio\n+divisor\n  -1%0A%09%09%7D \n@@ -284,20 +284,23 @@\n f slice%5B\n-meio\n+divisor\n %5D %3C valu\n@@ -315,20 +315,23 @@\n omeco = \n-meio\n+divisor\n  + 1%0A%09%09%7D\n@@ -352,28 +352,24 @@\n urn \n-meio%0A%09%09%7D%0A        \n+divisor%0A%09%09%7D%0A%09%7D\n %0A%09\n-%7D\n %0A%09re\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-04-26_01-54-20",
+            "content": "@@ -262,17 +262,17 @@\n eio \n--\n++\n  1%0A%09%09%7D %0A\n %0A%09%09i\n@@ -267,17 +267,16 @@\n  1%0A%09%09%7D %0A\n-%0A\n %09%09if sli\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-26_01-55-44",
+            "content": "@@ -262,29 +262,12 @@\n eio \n-+\n+-\n  1%0A\n-%09%09%09return comeco%0A\n %09%09%7D \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-26_01-56-28",
+            "content": "@@ -268,27 +268,29 @@\n 1%0A%09%09%09return \n+co\n me\n-i\n+c\n o%0A%09%09%7D %0A%0A%09%09if\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-26_01-56-35",
+            "content": "@@ -276,16 +276,12 @@\n urn \n-comeco-1\n+meio\n %0A%09%09%7D\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-26_01-57-50",
+            "content": "@@ -260,31 +260,49 @@\n  meio + 1%0A%09%09\n-%7D else \n+%09return comeco-1%0A%09%09%7D %0A%0A%09%09\n if slice%5Bmei\n@@ -432,78 +432,22 @@\n %0A%09%7D%0A\n-%0A%09if comeco != value%7B%0A%09%09return comeco-1%0A%09%7D else %7B%0A%09%09return comeco%0A%09%7D%0A%09\n+%09return comeco\n %0A%7D%0A%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-26_02-05-14",
+            "content": "@@ -414,27 +414,10 @@\n %0A%09%7D%0A\n+%0A\n %09\n-return comeco%0A%09/* \n if c\n@@ -484,10 +484,8 @@\n %09%7D%0A%09\n-*/\n %0A%7D%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-04-26_02-07-40",
+            "content": "@@ -411,16 +411,34 @@\n    %0A%09%7D%0A%09\n+return comeco%0A%09/* \n if comec\n@@ -496,16 +496,20 @@\n meco%0A%09%7D%0A\n+%09*/%0A\n %7D%0A%0Afunc \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-04-26_02-09-33",
+            "content": "@@ -410,31 +410,16 @@\n     %0A%09%7D%0A\n-%09return comeco%0A\n %09if come\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-26_02-10-20",
+            "content": "@@ -406,16 +406,21 @@\n         \n+%0A%09%7D%0A%09\n return c\n@@ -425,19 +425,16 @@\n  comeco%0A\n-%09%7D%0A\n %09if come\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-26_02-10-33",
+            "content": "@@ -398,16 +398,38 @@\n eio%0A%09%09%7D%0A\n+        return comeco%0A\n %09%7D%0A%09if c\n@@ -464,17 +464,25 @@\n eco-1%0A%09%7D\n-%0A\n+ else %7B%0A%09\n %09return \n@@ -488,16 +488,19 @@\n  comeco%0A\n+%09%7D%0A\n %7D%0A%0Afunc \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-26_02-13-01",
+            "content": "@@ -409,33 +409,23 @@\n %09if \n-slice%5B\n comeco\n--1%5D =\n+ !\n = value\n- \n %7B%0A%09%09\n@@ -442,25 +442,17 @@\n eco-1%0A%09%7D\n- else %7B%0A%09\n+%0A\n %09return \n@@ -458,19 +458,16 @@\n  comeco%0A\n-%09%7D%0A\n %7D%0A%0Afunc \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-26_02-16-36",
+            "content": "@@ -408,22 +408,8 @@\n %0A%09if\n- comeco %3E 0 &&\n  sli\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-26_02-18-18",
+            "content": "@@ -265,27 +265,8 @@\n  + 1\n- //empurra o comeco\n %0A%09%09%7D\n@@ -316,29 +316,8 @@\n o -1\n- //fim vai pro comeco\n %0A%09%09%7D\n@@ -371,29 +371,8 @@\n  + 1\n- //comeco vai pro fim\n %0A%09%09%7D\n@@ -449,89 +449,8 @@\n ue %7B\n- //empurra ate depois de encontrar o valor e ent%C3%A3o diminui 1 pro valor correto%0A%09%09\n %0A%09%09r\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-26_02-31-01",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc MagicSearch(slice []int, value int) int {\n\t_, _ = slice, value\n\tcomeco, fim := 0, len(slice)-1\n\n\tfor comeco <= fim {\n\t\tmeio := (comeco + fim)/2\n\n\t\tif slice[meio] == value {\n\t\t\tcomeco = meio + 1 //empurra o comeco\n\t\t} else if slice[meio] > value {\n\t\t\tfim = meio -1 //fim vai pro comeco\n\t\t} else if slice[meio] < value {\n\t\t\tcomeco = meio + 1 //comeco vai pro fim\n\t\t} else {\n\t\t\treturn meio\n\t\t}\n\t}\n\tif comeco > 0 && slice[comeco-1] == value { //empurra ate depois de encontrar o valor e ent\u00e3o diminui 1 pro valor correto\n\t\t\n\t\treturn comeco-1\n\t} else {\n\t\treturn comeco\n\t}\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Fields(scanner.Text())\n\tslice := make([]int, 0, 1)\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tresult := MagicSearch(slice, value)\n\tfmt.Println(result)\n}\n",
+            "lines": "50"
+        }
+    ]
+}
