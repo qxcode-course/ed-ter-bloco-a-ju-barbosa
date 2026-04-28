@@ -42,25 +42,52 @@ func (i *Iterator) Next() int {
 }
 
 type ReverseIterator struct {
-	data  []int
-	index int
+	data  []int//dados (números)
+	index int//posição atual
 }
 
 func (l *MyList) ReverseIterator() *ReverseIterator {
 	return &ReverseIterator{
-		data: l.data,
-		index: len(l.data)}
+		data: l.data,//dados mylist
+		index: len(l.data)}//começa do ultimo
 }
 
-func (i* ReverseIterator) HasNext() bool{
-	return i.index > 0
+func (i* ReverseIterator) HasNext() bool{//retorna false quando chegar em 0
+	return i.index > 0//enquanto estiver numa posição maior q 0, existe um elemento atrás
 }
 
 func (i* ReverseIterator) Next() int {
-	i.index -= 1
+	i.index -= 1//diminui 1 posição
 
 	return i.data[i.index]
 }
+
+
+type CyclicIterator struct {
+	data  []int//dados (números)
+	index int//posição atual
+}
+
+func (l *MyList) CyclicIterator() *CyclicIterator {
+	return &CyclicIterator{
+		data: l.data,//dados mylist
+		index: -1}//do começo
+}
+
+func (i* CyclicIterator) HasNext() bool{
+	return true//sempre tem um proximo
+}
+
+func (i* CyclicIterator) Next() int {
+	i.index += 1//sempre cresce
+
+	if i.index == len(i.data){//se chegar no fim, volta pro 0
+		i.index = 0
+	}
+	return i.data[i.index]
+}
+
+
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
@@ -94,13 +121,13 @@ func main() {
 			 }
 			 fmt.Println("]")
 		case "cyclic":
-			// qtd, _ := strconv.Atoi(args[1])
-			// fmt.Print("[ ")
-			// it := mylist.CyclicIterator()
-			// for range qtd {
-			// 	fmt.Printf("%v ", it.Next())
-			// }
-			// fmt.Println("]")
+			qtd, _ := strconv.Atoi(args[1])
+		    fmt.Print("[ ")
+	        it := mylist.CyclicIterator()
+		    for range qtd {
+			fmt.Printf("%v ", it.Next())
+			}
+			fmt.Println("]")
 		}
 	}
 

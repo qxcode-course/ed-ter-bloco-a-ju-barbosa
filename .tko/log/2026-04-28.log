@@ -2,3 +2,15 @@
 2026-04-28 00:09:56, MOVE, v:1, k:ed@iterador, mode:EDIT
 2026-04-28 00:12:59, EXEC, v:1, k:ed@iterador, mode:FULL, rate:33, size:107
 2026-04-28 00:13:20, EXEC, v:1, k:ed@iterador, mode:FULL, rate:66, size:107
+2026-04-28 00:14:31, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-04-28 00:13:17, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 00:13:20, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:24:44, MOVE, v:1, k:ed@iterador, mode:PICK
+2026-04-28 01:34:05, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:35:06, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:44:19, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:49:34, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:54:35, MOVE, v:1, k:ed@iterador, mode:EDIT
+2026-04-28 01:58:19, EXEC, v:1, k:ed@iterador, mode:FULL, rate:100, size:134
+2026-04-28 01:58:50, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-04-28 01:59:58, SELF, v:1, k:ed@iterador, self:1, rate:100, study:185, friend:cecilia, concept:1, problem:1
