@@ -19,7 +19,7 @@ class Iterator {
 }
 
 class ReverseIterator {
-  - data: []int                             ' Referência à lista de inteiros a ser iterada
+  - data: []int                              ' Referência à lista de inteiros a ser iterada
   - index: int                              ' Índice atual do iterador (começa do fim)
   --
   + HasNext(): bool                         ' Retorna true se houver elementos anteriores
