@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_20-30-33",
+            "content": "@@ -353,16 +353,17 @@\n ) + %22%5D%22%0A\n+%09\n %0A%7D%0A%0Afunc\n@@ -655,16 +655,19 @@\n Stdin)%0A%09\n+// \n ms := Ne\n@@ -1092,35 +1092,8 @@\n ow%22:\n- %0A%09%09fmt.Println(String(ms))\n %0A%09%09c\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-04-28_20-32-14",
+            "content": "@@ -284,16 +284,22 @@\n %7D%0A%0Afunc \n+String\n (v * Mul\n@@ -309,51 +309,16 @@\n et) \n-String() string %7B//m%C3%A9todo da classe Multset\n+string %7B\n %0A%09re\n@@ -1104,18 +1104,17 @@\n tln(\n-ms.\n String(\n+ms\n ))%0A%09\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-28_20-34-43",
+            "content": "@@ -283,51 +283,8 @@\n %0A%7D%0A%0A\n-func (v * MultiSet) Insert(value int)%7B%0A%0A%7D%0A%0A\n func\n@@ -934,14 +934,12 @@\n :%0A%09%09\n-    \n+%09\n //\n+ \n valu\n@@ -973,16 +973,17 @@\n %5D)%0A%09%09%09//\n+ \n ms = New\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-28_20-41-38",
+            "content": "@@ -53,19 +53,8 @@\n gs%22%0A\n-%09%22strconv%22%0A\n )%0A%0At\n@@ -977,16 +977,18 @@\n :%0A%09%09    \n+//\n value, _\n@@ -1016,16 +1016,18 @@\n %5B1%5D)%0A%09%09%09\n+//\n ms = New\n@@ -1064,13 +1064,13 @@\n %22:%0A%09\n-    %09\n+%09%09// \n for \n@@ -1099,16 +1099,19 @@\n 1:%5D %7B%0A%09%09\n+%09\n+//\n  %09value,\n@@ -1138,16 +1138,18 @@\n art)%0A%09%09%09\n+//\n  %7D%0A%09%09cas\n@@ -1260,27 +1260,27 @@\n ntains%22:%0A%09%09%09\n- \n //\n+ \n value, _ := \n@@ -1320,19 +1320,19 @@\n nt%22:%0A%09%09%09\n- \n //\n+ \n value, _\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-04-28_20-47-24",
+            "content": "@@ -1072,18 +1072,16 @@\n :%0A%09    %09\n-//\n for _, p\n@@ -1108,18 +1108,16 @@\n %5D %7B%0A%09%09 %09\n-//\n value, _\n@@ -1143,18 +1143,16 @@\n rt)%0A%09%09%09 \n-//\n %7D%0A%09%09case\n",
+            "lines": "86"
+        },
+        {
+            "label": "2026-04-28_20-47-48",
+            "content": "@@ -426,18 +426,8 @@\n data\n-%5B0:v.size%5D\n , %22,\n",
+            "lines": "86"
+        },
+        {
+            "label": "2026-04-28_20-55-58",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"strconv\"\n)\n\ntype MultiSet struct {\n\tdata []int\n\tsize int\n\tcapacity int\n}\n\nfunc NewMultiSet (capacity int) *MultiSet{//retornando o ponteiro da struct\n\treturn &MultiSet{\n\t\tdata: make([]int, capacity),\n\t\tsize: 0,\n\t\tcapacity: capacity,\n\t}\n}\n\nfunc (v * MultiSet) Insert(value int){\n\n}\n\nfunc (v * MultiSet) String() string {//m\u00e9todo da classe Multset\n\treturn \"[\" + Join(v.data[0:v.size], \", \") + \"]\"\n\n}\n\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tresult := fmt.Sprintf(\"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tresult += sep + fmt.Sprintf(\"%d\", value)\n\t}\n\treturn result\n}\n\n\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\tms := NewMultiSet(0)\n\n\tfor scanner.Scan() {\n\t\tfmt.Print(\"$\")\n\t\tline = scanner.Text()\n\t\targs := strings.Fields(line)\n\t\tfmt.Println(line)\n\t\tif len(args) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = args[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t    value, _ := strconv.Atoi(args[1])\n\t\t\tms = NewMultiSet(value)\n\t\tcase \"insert\":\n\t    \t//for _, part := range args[1:] {\n\t\t \t//value, _ := strconv.Atoi(part)\n\t\t\t //}\n\t\tcase \"show\": \n\t\tfmt.Println(ms.String())\n\t\tcase \"erase\":\n\t\t\t// value, _ := strconv.Atoi(args[1])\n\t\tcase \"contains\":\n\t\t\t //value, _ := strconv.Atoi(args[1])\n\t\tcase \"count\":\n\t\t\t //value, _ := strconv.Atoi(args[1])\n\t\tcase \"unique\":\n\t\tcase \"clear\":\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "86"
+        }
+    ]
+}

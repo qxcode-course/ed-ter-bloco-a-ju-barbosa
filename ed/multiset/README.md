@@ -9,9 +9,9 @@
   - Vamos ter um vetor dinâmico que vai armazenar os elementos.
   - O vetor dinâmico vai ser redimensionado quando necessário.
   - O vetor dinâmico vai ter um tamanho inicial padrão.
-  - Vamos ter um custo de O(n) para inserção pela necessidade de deslocar os elementos.
+  - Vamoss fazer uma busca binár ter um custo de O(n) para inserção pela necessidade de deslocar os elementos.
 - Busca - O(log n)
-  - Como os dados estão em um vetor ordenado, podemos fazer uma busca binária para encontrar o elemento.
+  - Como os dados estão em um vetor ordenado, podemoia para encontrar o elemento.
   - A busca binária tem um custo de O(log n).
 - Remoção - O(n)
   - A remoção de um elemento também tem um custo de O(n) pela necessidade de deslocar os elementos.

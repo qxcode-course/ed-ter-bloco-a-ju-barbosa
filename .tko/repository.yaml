@@ -22,15 +22,14 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@map_set
-- ed@rec
+- ed@backtrack
 - ed@vector
 flags:
-  inbox: inbox
+  inbox: all
   panel: help
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@iterador
-selected_index: 24
+selected: ed@multiset
+selected_index: 14

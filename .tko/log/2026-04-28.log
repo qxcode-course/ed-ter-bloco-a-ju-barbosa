@@ -14,3 +14,33 @@
 2026-04-28 01:58:19, EXEC, v:1, k:ed@iterador, mode:FULL, rate:100, size:134
 2026-04-28 01:58:50, MOVE, v:1, k:ed@iterador, mode:BACK
 2026-04-28 01:59:58, SELF, v:1, k:ed@iterador, self:1, rate:100, study:185, friend:cecilia, concept:1, problem:1
+2026-04-28 02:01:27, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-04-28 02:02:41, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 02:12:41, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-04-28 20:10:48, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-04-28 20:19:47, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:21:44, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:27:16, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-04-28 20:27:22, MOVE, v:1, k:ed@iterador, mode:PICK
+2026-04-28 20:27:51, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-04-28 20:27:55, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-04-28 20:29:53, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:30:33, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:80
+2026-04-28 20:32:14, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:81
+2026-04-28 20:34:43, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:81
+2026-04-28 20:34:33, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:34:42, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:38:22, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:41:38, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:85
+2026-04-28 20:42:18, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:41:38, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:47:24, EXEC, v:1, k:ed@multiset, mode:FULL, size:86, fail:COMP
+2026-04-28 20:47:48, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:86
+2026-04-28 20:47:47, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:47:48, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:55:58, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:86
+2026-04-28 20:58:27, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 20:55:58, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 21:04:35, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 21:09:48, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-04-28 21:11:58, MOVE, v:1, k:ed@multiset, mode:BACK
