@@ -23,7 +23,7 @@ func NewMultiSet (capacity int) *MultiSet{//retornando o ponteiro da struct
 	}
 }
 
-/*func (v * MultiSet) Insert(value int) error {
+func (v * MultiSet) Insert(value int) error {
 	if v.size == v.capacity {
 		v.data[v.size] = value
 		v.size++
@@ -31,7 +31,7 @@ func NewMultiSet (capacity int) *MultiSet{//retornando o ponteiro da struct
 		
 	}
 	return 
-}*/
+}
 
 func (v * MultiSet) String() string {//método da classe Multiset
 	return "[" + Join(v.data[0:v.size], ", ") + "]"
@@ -48,8 +48,6 @@ func Join(slice []int, sep string) string {
 	}
 	return result
 }
-
-
 
 func main() {
 	var line, cmd string
