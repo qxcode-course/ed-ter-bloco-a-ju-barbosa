@@ -14,40 +14,99 @@ type Editor struct {
 	style   tcell.Style
 }
 
-func (e *Editor) InsertChar(r rune) {
-	e.it_char = e.it_line.Value.Insert(e.it_char, r)
-	e.it_char = e.it_char.Next()
+func (e *Editor) InsertChar(r rune) { //posição do cursor e colocar elemento na sua posição
+	e.it_char = e.it_line.Value.Insert(e.it_char, r)//insere no meio da lista. o 
+	e.it_char = e.it_char.Next()//cursor vai pra próxima
 }
 
 func (e *Editor) KeyLeft() {
-	if e.it_char.Prev() != e.it_line.Value.End() {
+	if e.it_char.Prev() != e.it_line.Value.End() {//se o caractere anterior for diferente da linha do final
 		e.it_char = e.it_char.Prev() // Move o cursor para a esquerda
 	}
 }
 
 func (e *Editor) KeyEnter() {
+	if e.it_char == e.it_line.Value.End(){
+	nova := NewList[rune]()//nova linha
+	e.texto.Insert(e.it_line.Next(), nova)//abaixo da linha em q se está
+	e.it_line = e.it_line.Next()
+	e.it_char = e.it_line.Value.Front()
+	return
+	}
+
 	nova := NewList[rune]()
+	for i := e.it_char; i != e.it_line.Value.End(); {
+		nova.PushBack(i.Value)
+		i = e.it_line.Value.Erase(i)
+	}
+
 	e.texto.Insert(e.it_line.Next(), nova)
 	e.it_line = e.it_line.Next()
 	e.it_char = e.it_line.Value.Front()
 }
 
 func (e *Editor) KeyRight() {
-	e.it_char = e.it_char.Next() // Move o cursor para a direita
+	if e.it_char.Next() != e.it_line.Value.Front() {
+		e.it_char = e.it_char.Next() // Move o cursor para a direita
+	}
+	
 }
 
 func (e *Editor) KeyUp() {
-	if 
+	if e.it_line == e.texto.Front() {
+		return
+	}
+
+	posicao := e.it_line.Value.IndexOf(e.it_char)
+	e.it_line = e.it_line.Prev()
+
+	temp := e.it_line.Value.Front()
+	for i := 0; i < posicao && temp != e.it_line.Value.End(); i++ {
+		temp = temp.Next()
+	}
+    e.it_char = temp
 }
 
 func (e *Editor) KeyDown() {
+	if e.it_line == e.texto.Back() {
+		return
+	}
+	
+	posicao := e.it_line.Value.IndexOf(e.it_char)
+	e.it_line = e.it_line.Next()
+
+	temp := e.it_line.Value.Front()
+	for i := 0; i < posicao && temp != e.it_line.Value.End(); i++ {
+		temp = temp.Next()
+	}
+    e.it_char = temp
 }
 
 func (e *Editor) KeyBackspace() {
-
+	if e.it_char == e.it_line.Value.Front() {
+		linhaAnterior := e.it_line.Prev()
+		for i := e.it_line.Value.Front(); i != e.it_line.Value.End(); i = i.Next(){
+			linhaAnterior.Value.PushBack(i.Value)
+		}
+	e.texto.Erase(e.it_line)
+	e.it_line = linhaAnterior
+	e.it_char = e.it_line.Value.Back()
+	return
+}
 }
 
 func (e *Editor) KeyDelete() {
+	if e.it_char != e.it_line.Value.End(){
+		e.it_char = e.it_line.Value.Erase(e.it_char)
+	}  
+
+	prox := e.it_line.Next()
+	for i := prox.Value.Front(); i != prox.Value.End(); i = i.Next(){
+		e.it_line.Value.PushBack(i.Value)
+	}
+
+	e.texto.Erase(prox)
+	e.it_char = e.it_line.Value.End()
 }
 
 func main() {
