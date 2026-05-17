@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-17_21-50-32",
+            "content": "@@ -1000,13 +1000,41 @@\n ) %7B%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%0A%7D %0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-17_21-50-44",
+            "content": "@@ -958,35 +958,8 @@\n '.'%0A\n-    fmt.Printf(%22%25d%22, line)%0A\n     \n@@ -1004,170 +1004,9 @@\n     \n-var texto string%0A    var limite int%0A%0A    fmt.Scanln(&texto, &limite)%0A    %0A    linha := %5B%5Drune(texto)%0A    indice := 0%0A%0A    distancia(linha, indice, limite, limite)\n+%0A\n %0A%7D %0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-17_22-06-26",
+            "content": "@@ -530,32 +530,29 @@\n mt.Print\n-ln(string(\n+f(%22%25d%22, \n line)\n-)\n %0A       \n@@ -820,33 +820,21 @@\n rint\n-ln(string(line))%0A        \n+f(%22%25d%22, line)\n %0A   \n@@ -971,24 +971,21 @@\n rint\n-ln(string(\n+f(%22%25d%22, \n line)\n-)\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-17_22-11-49",
+            "content": "@@ -805,24 +805,50 @@\n  '0'%0A       \n+ fmt.Println(string(line))\n %0A        %0A  \n@@ -969,24 +969,49 @@\n %5D = '.'%0A    \n+fmt.Println(string(line))\n %0A    return \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-17_22-12-33",
+            "content": "@@ -801,33 +801,32 @@\n i) + '0'%0A       \n- \n %0A        %0A      \n@@ -943,16 +943,21 @@\n %5D = '.'%0A\n+    %0A\n     retu\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-17_22-13-24",
+            "content": "@@ -37,19 +37,19 @@\n rir(line\n- \n %5B%5D\n+ \n rune, in\n@@ -234,30 +234,24 @@\n e%0A        %7D%0A\n-    %7D%0A\n     for i :=\n@@ -370,24 +370,34 @@\n     %7D%0A    %7D%0A\n+        %7D%0A\n         retu\n@@ -404,16 +404,20 @@\n rn true%0A\n+    \n %7D%0A     %0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-17_22-17-21",
+            "content": "@@ -423,32 +423,33 @@\n istancia(line %5B%5D\n+ \n rune, indice int\n@@ -986,95 +986,68 @@\n     \n-limite := 0%0A    entrada := %22%22%0A    indice := 0%0A%0A    fmt.Scanln(&entrada)%0A    fmt.Scanln(\n+var texto string%0A    var limite int%0A%0A    fmt.Scanln(&texto, \n &lim\n@@ -1056,21 +1056,16 @@\n e)%0A    %0A\n-    %0A\n     linh\n@@ -1080,16 +1080,30 @@\n une(\n-entrada)\n+texto)%0A    indice := 0\n %0A%0A  \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-17_22-20-12",
+            "content": "package main\nimport \"fmt\"\n\nfunc inserir(line []rune, indice int, num int, lim int, prox int) bool {\n    for i := indice + 1; i < indice + 1 + prox; i++ {\n        if i < len(line) && line[i] == rune(num) + '0'{\n            return false\n        }\n    }\n    for i := indice - prox; i < indice;  i++{\n        if i >= 0 && line[i] == rune(num) + '0'{\n            return false\n        }\n    }\n        return true\n}\n     \n\nfunc distancia(line []rune, indice int, lim int, prox int) bool {\n    if len(line) == indice {\n        fmt.Println(string(line))\n        return true\n    }\n    \n        if line[indice] != '.'{\n            return distancia(line, indice + 1, lim, prox)\n        }\n\n    for i := 0; i <= lim; i++ {\n        if inserir(line, indice, i, lim, prox) {\n            line[indice] = rune (i) + '0'\n        \n        \n        if distancia(line, indice + 1, lim, prox) { \n            return true\n        }\n    }\n    \n }\n    line[indice] = '.'\n    return false\n    }\n    \nfunc main() {\n    limite := 0\n    entrada := \"\"\n    indice := 0\n\n    fmt.Scanln(&entrada)\n    fmt.Scanln(&limite)\n    \n    \n    linha := []rune(entrada)\n\n    distancia(linha, indice, limite, limite)\n} \n",
+            "lines": "56"
+        }
+    ]
+}
