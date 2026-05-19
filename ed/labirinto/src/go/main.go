@@ -24,15 +24,28 @@ func match(grid [][]rune, p Pos, value rune) bool {
 
 // Função recursiva que tenta encontrar o caminho do início ao fim
 func search(grid [][]rune, startPos, endPos Pos) bool {
-	_, _, _ = grid, startPos, endPos
-	numL := len(grid)
-	numC := len(grid[0])
-
+	if startPos.l == endPos.l && startPos.c == endPos.c {
+		grid [startPos.l][startPos.c] = '.'
+		return true
+	} 
 	
+	if !inside(grid, startPos) || grid[startPos.l][startPos.c] != ' '{
+		return false
+	}
+	
+	grid [startPos.l][startPos.c] = '#'
 
-	return search(grid, startPos, endPos)
-}
-
+		for _, viz := range getNeig(startPos) {
+			if search(grid, viz, endPos){
+				grid [startPos.l][startPos.c] = '.'
+				return true
+			}
+		}
+			
+		grid[startPos.l][startPos.c] = ' '
+		return false
+		}
+	
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
@@ -63,6 +76,7 @@ func main() {
 	}
 
 	search(grid, startPos, endPos)
+
 
 	// Imprime o labirinto final
 	for _, line := range grid {

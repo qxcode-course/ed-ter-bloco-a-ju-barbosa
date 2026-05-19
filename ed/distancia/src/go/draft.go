@@ -51,6 +51,8 @@ func main() {
     
     
     linha := []rune(entrada)
+  
 
+    
     distancia(linha, indice, limite, limite)
 } 
