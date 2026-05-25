@@ -19,14 +19,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@dfs
+- ed@map_set
 - eval1@eval1
 flags:
   inbox: all
-  panel: skills
-  show_panel: 'false'
+  panel: graph
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@ilhas
-selected_index: 10
+selected: ed@map_set
+selected_index: 1

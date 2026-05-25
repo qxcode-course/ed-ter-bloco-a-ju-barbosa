@@ -12,8 +12,38 @@
         },
         {
             "label": "2026-03-28_20-38-45",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, e int\n    fmt.Scan(&n, &e)\n    \n    fila := make([]int, 1, n)\n    mortos := make(map[int]int)\n\n}\n",
+            "content": "@@ -23,545 +23,34 @@\n mt%22%0A\n-%0A\n func \n-print_jogadores(jogadores%5B%5Dint, espada int) %7B%0A    fmt.print(%22%5B%22)%0A    for i, elemento := range jogadores%7B%0A        if elemento == 0%7B%0A            continue%0A        %7D%0A        fmt.Print(elemento)%0A        if i == espada%7B%0A            fmt.Print(%22%3E%22)%0A        %7D%0A        fmt.Print(%22%22)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%7D%0A%0Afunc procurar_vivo(jogadores%5B%5D int, espada int) int%7B%0A    for %7B%0A       espada = (espada + 1) %25 len(jogadores)%0A       if jogadores%5Bespada%5D != 0%7B%0A        return espada%0A       %7D%0A        %7D%0A    %7D%0A    %0Afunc main() %7B%0A    var qtd, espada\n+main() %7B%0A    var n, e\n  int\n@@ -68,36 +68,29 @@\n an(&\n-qtd\n+n\n , &e\n-spada)%0A%0A    jogadores\n+)%0A    %0A    fila \n := m\n@@ -104,357 +104,45 @@\n nt, \n-0, qtd\n+1, n\n )%0A\n-%0A\n     \n-for i := 1; i %3C= qtd; i++%7B%0A    jogadores= append(jogadores, i)%0A%7D%0A   espada -= 1%0A    for range qtd -1%7B%0A        print_jogadores(jogadores, espada)%0A        vai_morrer := procurar_vivo(jogadores, espada)%0A        jogadores%5Bvai_morrer%5D = 0%0A        espada = procurar_vivo(jogadores, espada)%0A        %0A    %7D%0A    print_jogadores(jogadores, espada)\n+mortos := make(map%5Bint%5Dint)%0A\n %0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-25_00-30-14",
+            "content": "@@ -75,25 +75,25 @@\n ) %7B%0A    fmt.\n-P\n+p\n rint(%22%5B%22)%0A  \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-25_00-30-23",
+            "content": "@@ -46,16 +46,24 @@\n es(j\n+ogadores\n %5B%5Dint, e\n  int\n@@ -58,16 +58,21 @@\n %5B%5Dint, e\n+spada\n  int) %7B%0A\n@@ -120,16 +120,24 @@\n  range j\n+ogadores\n %7B%0A      \n@@ -232,16 +232,21 @@\n f i == e\n+spada\n %7B%0A      \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-25_00-32-57",
+            "content": "@@ -269,17 +269,16 @@\n .Print(%22\n- \n %22)%0A    %7D\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-25_00-33-13",
+            "content": "@@ -74,17 +74,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-25_00-33-27",
+            "content": "@@ -46,24 +46,16 @@\n es(j\n-ogadores\n %5B%5Dint, e\n spad\n@@ -46,29 +46,24 @@\n es(j%5B%5Dint, e\n-spada\n  int) %7B%0A    \n@@ -108,24 +108,16 @@\n  range j\n-ogadores\n %7B%0A      \n@@ -212,21 +212,16 @@\n f i == e\n-spada\n %7B%0A      \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-25_00-34-20",
+            "content": "package main\nimport \"fmt\"\n\nfunc print_jogadores(jogadores[]int, espada int) {\n    fmt.Print(\"[ \")\n    for i, elemento := range jogadores{\n        if elemento == 0{\n            continue\n        }\n        fmt.Print(elemento)\n        if i == espada{\n            fmt.Print(\">\")\n        }\n        fmt.Print(\" \")\n    }\n    fmt.Print(\"]\\n\")\n}\n\nfunc procurar_vivo(jogadores[] int, espada int) int{\n    for {\n       espada = (espada + 1) % len(jogadores)\n       if jogadores[espada] != 0{\n        return espada\n       }\n        }\n    }\n    \nfunc main() {\n    var qtd, espada int\n    fmt.Scan(&qtd, &espada)\n\n    jogadores:= make([]int, 0, qtd)\n\n    for i := 1; i <= qtd; i++{\n    jogadores= append(jogadores, i)\n}\n   espada -= 1\n    for range qtd -1{\n        print_jogadores(jogadores, espada)\n        vai_morrer := procurar_vivo(jogadores, espada)\n        jogadores[vai_morrer] = 0\n        espada = procurar_vivo(jogadores, espada)\n        \n    }\n    print_jogadores(jogadores, espada)\n}\n",
+            "lines": "46"
         }
     ]
 }
