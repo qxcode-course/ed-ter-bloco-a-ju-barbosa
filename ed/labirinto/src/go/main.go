@@ -30,7 +30,7 @@ func search(grid [][]rune, startPos, endPos Pos) bool {
 	} 
 	
 	if !inside(grid, startPos) || grid[startPos.l][startPos.c] != ' '{
-		return false
+		return false   
 	}
 	
 	grid [startPos.l][startPos.c] = '#'
