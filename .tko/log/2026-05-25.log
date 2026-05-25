@@ -12,3 +12,7 @@
 2026-05-25 00:34:20, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100, size:46
 2026-05-25 00:34:23, MOVE, v:1, k:ed@princesa, mode:BACK
 2026-05-25 00:35:07, SELF, v:1, k:ed@princesa, self:1, rate:100, study:71, guided:1
+2026-05-25 23:52:56, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-05-25 23:53:13, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0, size:321
+2026-05-25 23:53:45, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-05-25 23:56:00, SELF, v:1, k:ed@editorint, self:1, friend:cecilia, concept:1, problem:1, refactor:1

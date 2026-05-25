@@ -82,6 +82,7 @@ func (l *List[T]) Erase(n *Node[T]) *Node[T] {
 		return l.root
 	}
 	n.prev.next = n.next
+	
 	n.next.prev = n.prev
 	l.size--
 	return n.next
