@@ -37,8 +37,78 @@
         },
         {
             "label": "2026-05-09_21-26-37",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"strconv\"\n\t\"errors\"\n)\n\ntype MultiSet struct {\n\tdata []int\n\tsize int\n\tcapacity int\n}\n\nfunc NewMultiSet (capacity int) *MultiSet{//retornando o ponteiro da struct\n\treturn &MultiSet{\n\t\tdata: make([]int, capacity),\n\t\tsize: 0,\n\t\tcapacity: capacity,\n\t}\n}\n\n/*func (v * MultiSet) Insert(value int) error {\n\tif v.size == v.capacity {\n\t\tv.data[v.size] = value\n\t\tv.size++\n\t} else {\n\t\t\n\t}\n\treturn \n}*/\n\nfunc (v * MultiSet) String() string {//m\u00e9todo da classe Multiset\n\treturn \"[\" + Join(v.data[0:v.size], \", \") + \"]\"\n\n}\n\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tresult := fmt.Sprintf(\"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tresult += sep + fmt.Sprintf(\"%d\", value)\n\t}\n\treturn result\n}\n\n\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\tms := NewMultiSet(0)\n\n\tfor scanner.Scan() {\n\t\tfmt.Print(\"$\")\n\t\tline = scanner.Text()\n\t\targs := strings.Fields(line)\n\t\tfmt.Println(line)\n\t\tif len(args) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = args[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t    value, _ := strconv.Atoi(args[1])\n\t\t\tms = NewMultiSet(value)\n\t\tcase \"insert\":\n\t    \t for _, part := range args[1:] {\n\t\t \t value, _ := strconv.Atoi(part)\n\t\t\t }\n\t\tcase \"show\": \n\t\tfmt.Println(ms.String())\n\t\tcase \"erase\":\n\t\t\t// value, _ := strconv.Atoi(args[1])\n\t\tcase \"contains\":\n\t\t\t //value, _ := strconv.Atoi(args[1])\n\t\tcase \"count\":\n\t\t\t //value, _ := strconv.Atoi(args[1])\n\t\tcase \"unique\":\n\t\tcase \"clear\":\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "content": "@@ -296,24 +296,26 @@\n city,%0A%09%7D%0A%7D%0A%0A\n+/*\n func (v * Mu\n@@ -339,16 +339,22 @@\n lue int)\n+ error\n  %7B%0A%09if v\n@@ -417,211 +417,34 @@\n +%0A%09%7D\n-%0A%0A%09index := v.size%0A%09for i := 0; i %3C v.size; i++%7B%0A%09%09if value %3C v.data%5Bi%5D%7B%0A%09%09%09index = i%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A%09for i := v.size; i %3C index; i--%7B%0A%09%09v.data%5Bi%5D = v.data%5Bi-1%5D%0A%09%7D%0A%09%0A%09v.data%5Bindex%5D = value %0A%09v.size++%0A%7D\n+ else %7B%0A%09%09%0A%09%7D%0A%09return %0A%7D*/\n %0A%0Afu\n@@ -774,24 +774,26 @@\n n result%0A%7D%0A%0A\n+%0A%0A\n func main() \n",
             "lines": "93"
+        },
+        {
+            "label": "2026-05-26_00-07-09",
+            "content": "@@ -60,16 +60,26 @@\n trconv%22%0A\n+%09%22errors%22%0A\n )%0A%0Atype \n@@ -1431,29 +1431,8 @@\n rt)%0A\n-%09%09%09 ms.Insert(value)%0A\n %09%09%09 \n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-05-26_00-07-53",
+            "content": "@@ -299,16 +299,17 @@\n unc (v *\n+ \n MultiSet\n@@ -314,41 +314,42 @@\n et) \n-expand()%7B%0A%09if v.capacity == 0%7B%0A%09%09\n+Insert(value int) %7B%0A%09if v.size == \n v.ca\n@@ -359,11 +359,9 @@\n ity \n-= 1\n+%7B\n %0A%09%09v\n@@ -369,228 +369,35 @@\n data\n- = make(%5B%5Dint, v.capacity)%0A%09%7D else %7B%0A%09%09v.capacity *= 2%0A%09%09newData := make(%5B%5Dint, v.capacity)%0A%09%09copy(newData, v.data)%0A%09%09v.data = newData%0A%09%7D%0A%7D%0A%0Afunc (v * MultiSet) Insert(value int) %7B%0A%09if v.size == v.capacity %7B%0A%09%09v.expand()\n+%5Bv.size%5D = value%0A%09%09v.size++\n %0A%09%7D%0A\n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-05-26_00-12-22",
+            "content": "@@ -239,19 +239,16 @@\n e(%5B%5Dint,\n- 0,\n  capacit\n@@ -695,36 +695,8 @@\n %09%7D%0A%0A\n-%09v.data = append(v.data, 0)%0A\n %09for\n",
+            "lines": "114"
+        },
+        {
+            "label": "2026-05-26_00-15-45",
+            "content": "@@ -746,9 +746,9 @@\n ; i \n-%3E\n+%3C\n  ind\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-05-26_00-20-44",
+            "content": "@@ -610,18 +610,16 @@\n  v.size%0A\n-%09%0A\n %09for i :\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-05-26_00-21-43",
+            "content": "@@ -948,276 +948,8 @@\n %0A%7D%0A%0A\n-func (v *MultiSet) Contains(value int) bool%7B%0A%09left, right := 0, v.size-1%0A%09for left %3C= right%7B%0A%09%09mid := (left + right)/2%0A%09%09if v.data%5Bmid%5D == value %7B%0A%09%09%09return true%0A%09%09%7D else if v.data%5Bmid%5D %3C value %7B%0A%09%09%09left = mid + 1%0A%09%09%7D else %7B%0A%09%09%09right = mid - 1%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0A%0A\n func\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-05-26_00-33-00",
+            "content": "@@ -2060,16 +2060,18 @@\n s%22:%0A%09%09%09 \n+//\n value, _\n@@ -2100,44 +2100,8 @@\n 1%5D)%0A\n-%09%09%09 fmt.Println(ms.Contains(value))%0A\n %09%09ca\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-05-26_00-33-48",
+            "content": "@@ -1216,461 +1216,8 @@\n %0A%7D%0A%0A\n-func (v *MultiSet) Erase(value int) error %7B%0A%09left, right := 0, v.size-1%0A%09index := -1%0A%09for left %3C= right%7B%0A%09%09mid := (left + right)/2%0A%09%09if v.data%5Bmid%5D == value %7B%0A%09%09%09index = mid%0A%09%09%09break%0A%09%09%7D else if v.data%5Bmid%5D %3C value %7B%0A%09%09%09left = mid + 1%0A%09%09%7D else %7B%0A%09%09%09right = mid - 1%0A%09%09%7D%0A%09%7D%0A%09if index == -1%7B%0A%09%09return fmt.Errorf(%22value not found%22)%0A%09%7D%0A%0A%09for i := index; i %3C v.size - 1; i++%7B%0A%09%09v.data%5Bi%5D = v.data%5Bi+1%5D%0A%09%7D%0A%0A%09v.size--%0A%09v.data = v.data%5B:v.size%5D%0A%0A%09return nil%0A%0A%7D%0A%0A\n func\n@@ -2000,16 +2000,19 @@\n se%22:%0A%09%09%09\n+// \n value, _\n@@ -2041,85 +2041,8 @@\n 1%5D)%0A\n-%09%09%09if err := ms.Erase(value); err != nil %7B%0A%09%09%09%09fmt.Println(err.Error())%0A%09%09%09%7D%0A\n %09%09ca\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-05-26_00-52-54",
+            "content": "@@ -1669,481 +1669,8 @@\n %0A%7D%0A%0A\n-func (v *MultiSet) Count(value int) int%7B%0A%09left, right := 0, v.size-1%0A%09index := -1%0A%09for left %3C= right%7B%0A%09%09mid := (left + right)/2%0A%09%09if v.data%5Bmid%5D == value %7B%0A%09%09%09index = mid%0A%09%09%09break%0A%09%09%7D else if v.data%5Bmid%5D %3C value %7B%0A%09%09%09left = mid + 1%0A%09%09%7D else %7B%0A%09%09%09right = mid - 1%0A%09%09%7D%0A%09%7D%0A%09if index == -1%7B%0A%09%09return 0%0A%09%7D%0A%0A%09count := 1%0A%09for i := index - 1; i %3E= 0 && v.data%5Bi%5D == value; i--%7B%0A%09%09count++%0A%09%7D%0A%0A%09for i := index + 1; i %3C v.size && v.data%5Bi%5D == value; i++%7B%0A%09%09count++%0A%09%7D%0A%09return count%0A%7D%0A%0A\n func\n",
+            "lines": "164"
+        },
+        {
+            "label": "2026-05-26_01-00-29",
+            "content": "@@ -3146,24 +3146,26 @@\n count%22:%0A%09%09%09 \n+//\n value, _ := \n@@ -3190,41 +3190,8 @@\n 1%5D)%0A\n-%09%09%09 fmt.Println(ms.Count(value))%0A\n %09%09ca\n",
+            "lines": "193"
+        },
+        {
+            "label": "2026-05-26_01-05-08",
+            "content": "@@ -2142,76 +2142,8 @@\n %0A%7D%0A%0A\n-func (v *MultiSet) Unique() int %7B%0A%09if v.size == 0%7B%0A%09%09return 0%0A%09%7D%0A%7D%0A%0A\n func\n",
+            "lines": "194"
+        },
+        {
+            "label": "2026-05-26_01-08-18",
+            "content": "@@ -2207,113 +2207,8 @@\n %0A%09%7D%0A\n-%09count := 1%0A%09for i := 1; i %3C v.size; i++%7B%0A%09%09if v.data%5Bi%5D != v.data%5Bi-1%5D%7B%0A%09%09%09count++%0A%09%09%7D%0A%09%7D%0A%09return count%0A\n %7D%0A%0Af\n@@ -3306,36 +3306,8 @@\n e%22:%0A\n-%09%09%09fmt.Println(ms.Unique())%0A\n %09%09ca\n",
+            "lines": "200"
+        },
+        {
+            "label": "2026-05-26_01-10-31",
+            "content": "@@ -2315,89 +2315,8 @@\n %0A%7D%0A%0A\n-func (v *MultiSet) Clear() %7B%0A%09v.data = make(%5B%5Dint, 0, v.capacity)%0A%09v.size = 0%0A%7D%0A%0A\n func\n@@ -3455,22 +3455,8 @@\n r%22:%0A\n-%09%09%09ms.Clear()%0A\n %09%09de\n",
+            "lines": "208"
+        },
+        {
+            "label": "2026-05-26_01-13-45",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"strconv\"\n)\n\ntype MultiSet struct {\n\tdata []int\n\tsize int\n\tcapacity int\n}\n\nfunc NewMultiSet (capacity int) *MultiSet{//retornando o ponteiro da struct\n\treturn &MultiSet{\n\t\tdata: make([]int, 0, capacity),\n\t\tsize: 0,\n\t\tcapacity: capacity,\n\t}\n}\n\nfunc (v *MultiSet) expand(){\n\tif v.capacity == 0{\n\t\tv.capacity = 1\n\t\tv.data = make([]int, v.capacity)\n\t} else {\n\t\tv.capacity *= 2\n\t\tnewData := make([]int, v.capacity)\n\t\tcopy(newData, v.data)\n\t\tv.data = newData\n\t}\n}\n\nfunc (v * MultiSet) Insert(value int) {\n\tif v.size == v.capacity {\n\t\tv.expand()\n\t}\n\n\tindex := v.size\n\t\n\tfor i := 0; i < v.size; i++{\n\t\tif value < v.data[i]{\n\t\t\tindex = i\n\t\t\tbreak\n\t\t}\n\t}\n\n\tv.data = append(v.data, 0)\n\tfor i := v.size; i > index; i--{\n\t\tv.data[i] = v.data[i-1]\n\t}\n\t\n\tv.data[index] = value \n\tv.size++\n}\n\nfunc (v * MultiSet) String() string {//m\u00e9todo da classe Multiset\n\treturn \"[\" + Join(v.data[0:v.size], \", \") + \"]\"\n\n}\n\nfunc (v *MultiSet) Contains(value int) bool{\n\tleft, right := 0, v.size-1\n\tfor left <= right{\n\t\tmid := (left + right)/2\n\t\tif v.data[mid] == value {\n\t\t\treturn true\n\t\t} else if v.data[mid] < value {\n\t\t\tleft = mid + 1\n\t\t} else {\n\t\t\tright = mid - 1\n\t\t}\n\t}\n\treturn false\n}\n\nfunc (v *MultiSet) Erase(value int) error {\n\tleft, right := 0, v.size-1\n\tindex := -1\n\tfor left <= right{\n\t\tmid := (left + right)/2\n\t\tif v.data[mid] == value {\n\t\t\tindex = mid\n\t\t\tbreak\n\t\t} else if v.data[mid] < value {\n\t\t\tleft = mid + 1\n\t\t} else {\n\t\t\tright = mid - 1\n\t\t}\n\t}\n\tif index == -1{\n\t\treturn fmt.Errorf(\"value not found\")\n\t}\n\n\tfor i := index; i < v.size - 1; i++{\n\t\tv.data[i] = v.data[i+1]\n\t}\n\n\tv.size--\n\tv.data = v.data[:v.size]\n\n\treturn nil\n\n}\n\nfunc (v *MultiSet) Count(value int) int{\n\tleft, right := 0, v.size-1\n\tindex := -1\n\tfor left <= right{\n\t\tmid := (left + right)/2\n\t\tif v.data[mid] == value {\n\t\t\tindex = mid\n\t\t\tbreak\n\t\t} else if v.data[mid] < value {\n\t\t\tleft = mid + 1\n\t\t} else {\n\t\t\tright = mid - 1\n\t\t}\n\t}\n\tif index == -1{\n\t\treturn 0\n\t}\n\n\tcount := 1\n\tfor i := index - 1; i >= 0 && v.data[i] == value; i--{\n\t\tcount++\n\t}\n\n\tfor i := index + 1; i < v.size && v.data[i] == value; i++{\n\t\tcount++\n\t}\n\treturn count\n}\n\nfunc (v *MultiSet) Unique() int {\n\tif v.size == 0{\n\t\treturn 0\n\t}\n\tcount := 1\n\tfor i := 1; i < v.size; i++{\n\t\tif v.data[i] != v.data[i-1]{\n\t\t\tcount++\n\t\t}\n\t}\n\treturn count\n}\n\nfunc (v *MultiSet) Clear() {\n\tv.data = make([]int, 0, v.capacity)\n\tv.size = 0\n}\n\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tresult := fmt.Sprintf(\"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tresult += sep + fmt.Sprintf(\"%d\", value)\n\t}\n\treturn result\n}\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\tms := NewMultiSet(0)\n\n\tfor scanner.Scan() {\n\t\tfmt.Print(\"$\")\n\t\tline = scanner.Text()\n\t\targs := strings.Fields(line)\n\t\tfmt.Println(line)\n\t\tif len(args) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = args[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t    value, _ := strconv.Atoi(args[1])\n\t\t\tms = NewMultiSet(value)\n\t\tcase \"insert\":\n\t    \t for _, part := range args[1:] {\n\t\t \t value, _ := strconv.Atoi(part)\n\t\t\t ms.Insert(value)\n\t\t\t }\n\t\tcase \"show\": \n\t\tfmt.Println(ms.String())\n\t\tcase \"erase\":\n\t\t\tvalue, _ := strconv.Atoi(args[1])\n\t\t\tif err := ms.Erase(value); err != nil {\n\t\t\t\tfmt.Println(err.Error())\n\t\t\t}\n\t\tcase \"contains\":\n\t\t\t value, _ := strconv.Atoi(args[1])\n\t\t\t fmt.Println(ms.Contains(value))\n\t\tcase \"count\":\n\t\t\t value, _ := strconv.Atoi(args[1])\n\t\t\t fmt.Println(ms.Count(value))\n\t\tcase \"unique\":\n\t\t\tfmt.Println(ms.Unique())\n\t\tcase \"clear\":\n\t\t\tms.Clear()\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "214"
         }
     ]
 }

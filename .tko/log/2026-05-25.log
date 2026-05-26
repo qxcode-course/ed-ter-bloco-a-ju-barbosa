@@ -16,3 +16,4 @@
 2026-05-25 23:53:13, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0, size:321
 2026-05-25 23:53:45, MOVE, v:1, k:ed@editorint, mode:BACK
 2026-05-25 23:56:00, SELF, v:1, k:ed@editorint, self:1, friend:cecilia, concept:1, problem:1, refactor:1
+2026-05-25 23:57:51, MOVE, v:1, k:ed@multiset, mode:PICK
