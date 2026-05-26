@@ -20,12 +20,13 @@ sources:
   quests: null
 expanded:
 - ed@vector
+- ed@backtrack
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@multiset
-selected_index: 8
+selected: ed@wordsearch
+selected_index: 4
