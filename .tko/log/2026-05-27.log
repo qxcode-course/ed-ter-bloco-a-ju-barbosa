@@ -1,0 +1,61 @@
+2026-05-27 00:01:02, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:45
+2026-05-27 00:03:19, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:45
+2026-05-27 00:04:42, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:45
+2026-05-27 00:04:41, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-27 00:04:42, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-27 00:05:51, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:45
+2026-05-27 00:06:13, EXEC, v:1, k:ed@fuga, mode:FULL, rate:70, size:45
+2026-05-27 00:06:27, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-05-27 00:06:29, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:45
+2026-05-27 00:06:31, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-05-27 00:06:59, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-05-27 00:07:01, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:45
+2026-05-27 00:07:18, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-05-27 00:08:08, SELF, v:1, k:ed@fuga, self:1, rate:100, study:129, friend:nao, debug:1
+2026-05-27 00:08:35, MOVE, v:1, k:ed@vetbuild, mode:DOWN
+2026-05-27 00:08:37, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-05-27 00:08:35, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:08:35, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:08:35, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:08:35, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:23:47, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:130, fail:COMP
+2026-05-27 00:28:20, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:33:24, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:33:55, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:147, fail:COMP
+2026-05-27 00:34:02, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:145, fail:COMP
+2026-05-27 00:34:26, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:145, fail:COMP
+2026-05-27 00:35:11, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:145, fail:COMP
+2026-05-27 00:37:19, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:40:45, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:146
+2026-05-27 00:42:04, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:40:44, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:53:24, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:54:38, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:158
+2026-05-27 00:56:36, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:158
+2026-05-27 00:58:05, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:158
+2026-05-27 00:58:01, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 00:58:04, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:00:44, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:162
+2026-05-27 01:01:14, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:162
+2026-05-27 01:02:15, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0
+2026-05-27 01:03:08, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:162
+2026-05-27 01:03:07, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:03:07, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:06:06, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:166
+2026-05-27 01:06:42, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:166
+2026-05-27 01:08:04, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:06:42, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:13:24, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:13:29, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:173
+2026-05-27 01:14:33, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:173
+2026-05-27 01:14:52, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:173
+2026-05-27 01:15:03, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:0, size:173
+2026-05-27 01:15:07, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:173
+2026-05-27 01:17:24, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:173, fail:COMP
+2026-05-27 01:15:07, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:17:38, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:19:30, EXEC, v:1, k:ed@vetbuild, mode:FULL, size:175, fail:COMP
+2026-05-27 01:23:23, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-05-27 01:25:00, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:194
+2026-05-27 01:25:44, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:54, size:194
+2026-05-27 01:26:08, MOVE, v:1, k:ed@vetbuild, mode:BACK

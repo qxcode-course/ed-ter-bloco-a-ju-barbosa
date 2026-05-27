@@ -152,8 +152,43 @@
         },
         {
             "label": "2026-03-16_19-29-30",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n   var H, P, F, D int\n   fmt.Scan(&H, &P, &F, &D)\n\n   if H > P && F < P && F < H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < F && F < P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F > H {\n      if D == -1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H > P && F > P && F < H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F < P && F > H {\n      if D == 1 {\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n      }\n   } else if H < P && F > P && F > H { \n      if D == -1 {\n         fmt.Printf(\"N\\n\")\n      } else {\n         fmt.Printf(\"S\\n\")\n      }\n   }\n}\n\n",
+            "content": "@@ -106,32 +106,33 @@\n & F %3C P && F %3C H\n+ \n %7B%0A      if D == \n@@ -124,34 +124,34 @@\n %0A      if D == -\n- \n 1\n+ \n %7B%0A         fmt.P\n@@ -176,32 +176,35 @@\n  %7D else %7B%0A      \n+   \n fmt.Printf(%22N%5Cn%22\n@@ -200,34 +200,36 @@\n rintf(%22N%5Cn%22)%0A   \n-%7D\n  \n+  %7D\n %0A   %7D else if H \n@@ -220,33 +220,33 @@\n %0A   %7D else if H \n-%3E\n+%3C\n  P && F %3E P && F\n@@ -241,32 +241,33 @@\n & F %3E P && F %3C H\n+ \n %7B%0A      if D == \n@@ -259,32 +259,33 @@\n %0A      if D == 1\n+ \n %7B%0A         fmt.P\n@@ -304,32 +304,35 @@\n %0A      %7D else %7B%0A\n+   \n       fmt.Printf\n@@ -334,35 +334,40 @@\n rintf(%22N%5Cn%22)%0A   \n-%7D %0A\n+   %7D%0A   \n %7D else if H %3E P \n@@ -362,26 +362,26 @@\n se if H \n-%3E P\n+%3C F\n  && F \n-%3E\n+%3C\n  P && F \n@@ -375,32 +375,33 @@\n & F %3C P && F %3E H\n+ \n %7B%0A      if D == \n@@ -393,34 +393,34 @@\n %0A      if D == -\n- \n 1\n+ \n %7B%0A         fmt.P\n@@ -445,32 +445,35 @@\n  %7D else %7B%0A      \n+   \n fmt.Printf(%22N%5Cn%22\n@@ -469,35 +469,40 @@\n rintf(%22N%5Cn%22)%0A   \n-%7D %0A\n+   %7D%0A   \n %7D else if H %3C P \n@@ -489,33 +489,33 @@\n %0A   %7D else if H \n-%3C\n+%3E\n  P && F %3E P && F\n@@ -510,32 +510,33 @@\n & F %3E P && F %3E H\n+ \n %7B%0A      if D == \n@@ -536,18 +536,18 @@\n f D == -\n- \n 1\n+ \n %7B%0A      \n@@ -553,33 +553,33 @@\n     fmt.Printf(%22\n-N\n+S\n %5Cn%22)%0A      %7D els\n@@ -580,32 +580,35 @@\n  %7D else %7B%0A      \n+   \n fmt.Printf(%22S%5Cn%22\n@@ -603,25 +603,25 @@\n Printf(%22\n-S\n+N\n %5Cn%22)%0A   \n %7D %0A%7D els\n@@ -612,19 +612,24 @@\n %5Cn%22)%0A   \n-%7D %0A\n+   %7D%0A   \n %7D else i\n@@ -624,33 +624,33 @@\n %0A   %7D else if H \n-%3C\n+%3E\n  P && F %3E P && F\n@@ -653,16 +653,17 @@\n && F %3C H\n+ \n %7B%0A      \n@@ -663,32 +663,33 @@\n %0A      if D == 1\n+ \n %7B%0A         fmt.P\n@@ -714,32 +714,35 @@\n  %7D else %7B%0A      \n+   \n fmt.Printf(%22N%5Cn%22\n@@ -742,26 +742,28 @@\n f(%22N%5Cn%22)%0A   \n-%7D \n+   %7D\n %0A   %7D else i\n@@ -787,16 +787,17 @@\n && F %3E H\n+ \n %7B%0A      \n@@ -805,16 +805,17 @@\n f D == 1\n+ \n %7B%0A      \n@@ -852,24 +852,27 @@\n lse %7B%0A      \n+   \n fmt.Printf(%22\n@@ -884,17 +884,153 @@\n %0A   \n-%7D %0A\n    \n+%7D%0A   %7D else if H %3C P && F %3E P && F %3E H %7B %0A      if D == -1 %7B%0A         fmt.Printf(%22N%5Cn%22)%0A      %7D else %7B%0A         fmt.Printf(%22S%5Cn%22)%0A      %7D%0A\n    %7D%0A%7D%0A\n+%0A\n",
             "lines": "52"
+        },
+        {
+            "label": "2026-05-27_00-01-02",
+            "content": "@@ -753,34 +753,32 @@\n H%7B%0A      if D ==\n- -\n  1%7B%0A         fmt\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-03-19",
+            "content": "@@ -527,33 +527,33 @@\n     fmt.Printf(%22\n-S\n+N\n %5Cn%22)%0A      %7D els\n@@ -566,33 +566,33 @@\n     fmt.Printf(%22\n-N\n+S\n %5Cn%22)%0A   %7D %0A%7D els\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-04-42",
+            "content": "@@ -468,33 +468,33 @@\n %7D else if H \n-%3E\n+%3C\n  P && F \n %3C P && F %3C H\n@@ -477,33 +477,33 @@\n  H %3C P && F \n-%3C\n+%3E\n  P && F \n %3C H%7B%0A      i\n@@ -482,33 +482,33 @@\n P && F %3E P && F \n-%3C\n+%3E\n  H%7B%0A      if D =\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-05-51",
+            "content": "@@ -468,33 +468,33 @@\n %7D else if H \n-%3C\n+%3E\n  P && F \n %3E P && F %3E H\n@@ -477,33 +477,33 @@\n  H %3E P && F \n-%3E\n+%3C\n  P && F \n %3E H%7B%0A      i\n@@ -482,33 +482,33 @@\n P && F %3C P && F \n-%3E\n+%3C\n  H%7B%0A      if D =\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-06-13",
+            "content": "@@ -527,33 +527,33 @@\n     fmt.Printf(%22\n-N\n+S\n %5Cn%22)%0A      %7D els\n@@ -566,33 +566,33 @@\n     fmt.Printf(%22\n-S\n+N\n %5Cn%22)%0A   %7D %0A%7D els\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-06-29",
+            "content": "@@ -678,35 +678,32 @@\n  %7D else %7B%0A      \n-   \n fmt.Printf(%22N%5Cn%22\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_00-07-01",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n   var H, P, F, D int\n   fmt.Scan(&H, &P, &F, &D)\n\n   if H > P && F < P && F < H{\n      if D == - 1{\n         fmt.Printf(\"S\\n\")\n      } else {\n      fmt.Printf(\"N\\n\")\n   } \n   } else if H > P && F > P && F < H{\n      if D == 1{\n         fmt.Printf(\"S\\n\")\n      } else {\n      fmt.Printf(\"N\\n\")\n   } \n} else if H > P && F > P && F > H{\n      if D == - 1{\n         fmt.Printf(\"S\\n\")\n      } else {\n      fmt.Printf(\"N\\n\")\n   } \n} else if H < P && F > P && F > H{\n      if D == - 1{\n         fmt.Printf(\"N\\n\")\n      } else {\n      fmt.Printf(\"S\\n\")\n   } \n} else if H < P && F > P && F < H{\n      if D == 1{\n         fmt.Printf(\"S\\n\")\n      } else {\n         fmt.Printf(\"N\\n\")\n   } \n   } else if H < P && F < P && F > H{\n      if D == - 1{\n         fmt.Printf(\"S\\n\")\n      } else {\n      fmt.Printf(\"N\\n\")\n   } \n      }\n}\n",
+            "lines": "45"
         }
     ]
 }
