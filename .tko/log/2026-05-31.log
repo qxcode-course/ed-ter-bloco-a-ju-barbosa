@@ -1,0 +1,44 @@
+2026-05-31 23:23:26, MOVE, v:1, k:ed@binomiais, mode:DOWN
+2026-05-31 23:23:26, MOVE, v:1, k:ed@binomiais, mode:PICK
+2026-05-31 23:23:25, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-31 23:23:26, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-31 23:27:10, MOVE, v:1, k:ed@binomiais, mode:BACK
+2026-05-31 23:27:28, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-05-31 23:27:32, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-05-31 23:27:38, MOVE, v:1, k:ed@binomiais, mode:PICK
+2026-05-31 23:29:25, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-31 23:34:08, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:100, size:16
+2026-05-31 23:34:24, MOVE, v:1, k:ed@binomiais, mode:BACK
+2026-05-31 23:34:44, SELF, v:1, k:ed@binomiais, self:1, rate:100, study:10
+2026-05-31 23:36:03, SELF, v:1, k:ed@editorint, self:1, rate:100, study:160, friend:cecilia, concept:1, problem:1, refactor:1
+2026-05-31 23:37:11, MOVE, v:1, k:ed@escada, mode:DOWN
+2026-05-31 23:37:12, MOVE, v:1, k:ed@escada, mode:PICK
+2026-05-31 23:37:11, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-05-31 23:37:11, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-05-31 23:39:31, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-05-31 23:41:14, EXEC, v:1, k:ed@escada, mode:FULL, rate:10, size:17
+2026-05-31 23:42:31, EXEC, v:1, k:ed@escada, mode:FULL, rate:100, size:17
+2026-05-31 23:42:48, MOVE, v:1, k:ed@escada, mode:BACK
+2026-05-31 23:43:16, SELF, v:1, k:ed@escada, self:1, rate:100, study:5
+2026-05-31 23:43:51, SELF, v:1, k:ed@editorint, self:1, study:160, friend:cecilia, concept:1, problem:1, refactor:1
+2026-05-31 23:43:56, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-05-31 23:43:58, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-05-31 23:44:08, SELF, v:1, k:ed@editorint, self:1, rate:100, study:160, friend:cecilia, concept:1, problem:1, refactor:1
+2026-05-31 23:44:41, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-05-31 23:44:51, EXEC, v:1, k:ed@fractais_png, mode:LOCK, rate:0
+2026-05-31 23:45:08, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-05-31 23:45:25, SELF, v:1, k:ed@fractais_png, self:1, rate:30, friend:cecilia, guided:1, problem:1
+2026-05-31 23:46:19, MOVE, v:1, k:ed@enesimo, mode:DOWN
+2026-05-31 23:46:21, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-05-31 23:47:44, MOVE, v:1, k:ed@enesimo, mode:BACK
+2026-05-31 23:44:50, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-05-31 23:44:51, MOVE, v:1, k:ed@fractais_png, mode:EDIT
+2026-05-31 23:46:19, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-05-31 23:46:19, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-05-31 23:48:01, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-05-31 23:48:26, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-05-31 23:48:30, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-05-31 23:50:00, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:0, size:27
+2026-05-31 23:52:29, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-05-31 23:49:59, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-05-31 23:57:52, MOVE, v:1, k:ed@enesimo, mode:EDIT

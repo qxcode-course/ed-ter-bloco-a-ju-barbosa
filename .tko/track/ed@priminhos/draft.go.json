@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_00-22-58",
+            "content": "@@ -468,10 +468,8 @@\n rint\n-ln\n (vet\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_00-23-10",
+            "content": "@@ -464,17 +464,18 @@\n mt.Print\n-f\n+ln\n (vetor_p\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_00-23-44",
+            "content": "@@ -468,10 +468,9 @@\n rint\n-ln\n+f\n (vet\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_00-24-03",
+            "content": "package main\nimport \"fmt\"\n\nfunc eh_primo(x int, div int) bool {\n\tif x < 2 {\n\t\treturn false\n\t}\n\tif div == x {\n\t\treturn true \n\t}\n\tif x % div == 0 {\n\t\treturn false\n\t}\n\treturn eh_primo(x, div + 1)\n}\n\nfunc vetor_primos(n int) [] int{\n    primos := []int {}\n    num := 2\n\n    for len(primos) < n {\n        if eh_primo(num, 2){\n            primos = append(primos, num)\n        }\n        num++\n    }\n    return primos\n}\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    fmt.Println(vetor_primos(n))\n}\n",
+            "lines": "34"
+        }
+    ]
+}

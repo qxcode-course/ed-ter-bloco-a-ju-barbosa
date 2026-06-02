@@ -1,0 +1,27 @@
+2026-06-01 00:02:14, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:12, size:31
+2026-06-01 00:02:50, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-06-01 00:02:12, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-06-01 00:03:28, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:12, size:34
+2026-06-01 00:03:44, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:25, size:34
+2026-06-01 00:04:14, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:25, size:32
+2026-06-01 00:05:14, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:100, size:32
+2026-06-01 00:05:33, MOVE, v:1, k:ed@enesimo, mode:BACK
+2026-06-01 00:06:24, SELF, v:1, k:ed@enesimo, self:1, rate:100, study:18, concept:1, problem:1
+2026-06-01 00:06:48, SELF, v:1, k:ed@fractais_png, self:1, rate:30, friend:cecilia, guided:1, problem:1
+2026-06-01 00:10:16, SELF, v:1, k:ed@editorint, self:1, rate:100, study:160, friend:cecilia, concept:1, problem:1, refactor:1
+2026-06-01 00:12:10, MOVE, v:1, k:ed@priminhos, mode:DOWN
+2026-06-01 00:12:11, MOVE, v:1, k:ed@priminhos, mode:PICK
+2026-06-01 00:14:52, MOVE, v:1, k:ed@priminhos, mode:BACK
+2026-06-01 00:14:58, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-06-01 00:12:10, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-01 00:12:10, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-01 00:15:50, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-01 00:20:49, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-01 00:22:01, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-06-01 00:22:34, MOVE, v:1, k:ed@priminhos, mode:PICK
+2026-06-01 00:22:58, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:0, size:34
+2026-06-01 00:23:10, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:34
+2026-06-01 00:23:44, EXEC, v:1, k:ed@priminhos, mode:FULL, size:34, fail:COMP
+2026-06-01 00:24:03, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:34
+2026-06-01 00:24:03, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-01 00:24:03, MOVE, v:1, k:ed@priminhos, mode:EDIT
