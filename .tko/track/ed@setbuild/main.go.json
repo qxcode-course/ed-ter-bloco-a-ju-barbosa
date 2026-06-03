@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_23-11-48",
+            "content": "@@ -53,19 +53,8 @@\n gs%22%0A\n-%09%22strconv%22%0A\n )%0A%0At\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-06-02_23-12-14",
+            "content": "@@ -227,242 +227,8 @@\n %0A%7D%0A%0A\n-//igual vetbuild%0Afunc (v *Set) Reserve(newCapacity int) %7B%0A%09if newCapacity %3C= v.capacity %7B%0A%09%09return%0A%09%7D%0A%09nData := make(%5B%5Dint, newCapacity)%0A%09for i := range v.size %7B%0A%09%09nData%5Bi%5D = v.data%5Bi%5D%0A%09%7D%0A%09v.data = nData%0A%09v.capacity = newCapacity%0A%7D%0A%0A%0A\n func\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-02_23-16-30",
+            "content": "@@ -460,673 +460,8 @@\n %0A%7D%0A%0A\n-//igual bettersearch%0Afunc BetterSearch(slice %5B%5Dint, value int) (bool, int) %7B%0A%09comeco, fim := 0, len(slice)-1%0A%0A%09for comeco %3C= fim %7B%0A%09%09divisor := (comeco + fim)/2%0A%0A%09%09if slice%5Bdivisor%5D %3E value %7B%0A%09%09%09fim = divisor -1%0A%09%09%7D else if slice%5Bdivisor%5D %3C value %7B%0A%09%09%09comeco = divisor + 1%0A%09%09%7D else %7B%0A%09%09%09return true, divisor%0A%09%09%7D%0A%09%7D%0A%09_, _ = slice, value%0A%09return false, comeco%0A%09%0A%7D%0A%0Afunc (v *Set) Insert(indice int, valor int) error %7B%0A%09if v.size == v.capacity %7B%0A%09%09newCapacity := v.capacity * 2%0A%0A%09%09if newCapacity == 0 %7B%0A%09%09%09newCapacity = 1%0A%09%09%7D%0A%09%09v.Reserve(newCapacity)%0A%09%7D%0A%0A%09for i := v.size; i %3E indice; i-- %7B%0A%09%09v.data%5Bi%5D = v.data%5Bi-1%5D%0A%09%7D%0A%0A%09v.data%5Bindice%5D = valor%0A%09v.size++%0A%09return nil%0A%7D%0A\n %0Afun\n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-06-02_23-43-44",
+            "content": "@@ -1519,16 +1519,19 @@\n rt%22:%0A%09%09%09\n+// \n for _, p\n@@ -1554,24 +1554,28 @@\n ts%5B1:%5D %7B%0A%09%09%09\n+// %09\n value, _ := \n@@ -1596,16 +1596,18 @@\n art)%0A%09%09%09\n+//\n  %7D%0A%09%09cas\n",
+            "lines": "112"
+        },
+        {
+            "label": "2026-06-02_23-44-42",
+            "content": "@@ -1124,359 +1124,8 @@\n il%0A%7D\n-%0A//igual vetbuild%0Afunc Join(slice %5B%5Dint, sep string) string %7B%0A%09if len(slice) == 0 %7B%0A%09%09return %22%22%0A%09%7D%0A%09var result strings.Builder%0A%09fmt.Fprintf(&result, %22%25d%22, slice%5B0%5D)%0A%09for _, value := range slice%5B1:%5D %7B%0A%09%09fmt.Fprintf(&result, %22%25s%25d%22, sep, value)%0A%09%7D%0A%09return result.String()%0A%7D%0A%0Afunc (s *Set) Show() string%7B%0A%09return %22%5B%22 + Join(s.data%5B:s.size%5D, %22, %22) + %22%5D%22%0A%7D\n %0A%0Afu\n@@ -1611,20 +1611,8 @@\n w%22:%0A\n-%09%09%09v.Show()%0A\n %09%09ca\n",
+            "lines": "112"
+        },
+        {
+            "label": "2026-06-02_23-48-18",
+            "content": "@@ -1941,27 +1941,8 @@\n rt)%0A\n-%09%09%09v.Insert(value)%0A\n %09%09%09 \n@@ -1965,28 +1965,16 @@\n %0A%09%09%09\n-fmt.Println(\n v.Show()\n )%0A%09%09\n@@ -1969,17 +1969,16 @@\n v.Show()\n-)\n %0A%09%09case \n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-06-02_23-51-22",
+            "content": "@@ -242,25 +242,25 @@\n build%0Afunc (\n-s\n+v\n  *Set) Reser\n@@ -300,17 +300,17 @@\n city %3C= \n-s\n+v\n .capacit\n@@ -376,17 +376,17 @@\n = range \n-s\n+v\n .size %7B%0A\n@@ -394,25 +394,25 @@\n %09nData%5Bi%5D = \n-s\n+v\n .data%5Bi%5D%0A%09%7D%0A\n@@ -412,17 +412,17 @@\n %5Bi%5D%0A%09%7D%0A%09\n-s\n+v\n .data = \n@@ -428,17 +428,17 @@\n  nData%0A%09\n-s\n+v\n .capacit\n@@ -495,16 +495,29 @@\n rSearch(\n+slice %5B%5Dint, \n value in\n@@ -518,20 +518,28 @@\n lue int)\n+ (bool,\n  int\n+)\n  %7B%0A%09come\n@@ -556,17 +556,19 @@\n  0, \n-s.size - \n+len(slice)-\n 1%0A%0A%09\n@@ -620,29 +620,28 @@\n m)/2%0A%0A%09%09if s\n-.data\n+lice\n %5Bdivisor%5D %3E \n@@ -681,21 +681,20 @@\n lse if s\n-.data\n+lice\n %5Bdivisor\n@@ -749,16 +749,22 @@\n %09%09return\n+ true,\n  divisor\n@@ -771,24 +771,45 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%09_, _ = slice, value%0A\n %09return \n - comeco\n@@ -804,20 +804,21 @@\n urn \n--\n+false,\n  comeco\n- - 1\n %0A%09%0A%7D\n@@ -821,25 +821,25 @@\n %0A%09%0A%7D%0A%0Afunc (\n-s\n+v\n  *Set) Inser\n@@ -875,17 +875,17 @@\n r %7B%0A%09if \n-s\n+v\n .size ==\n@@ -885,17 +885,17 @@\n size == \n-s\n+v\n .capacit\n@@ -915,17 +915,17 @@\n city := \n-s\n+v\n .capacit\n@@ -980,17 +980,17 @@\n 1%0A%09%09%7D%0A%09%09\n-s\n+v\n .Reserve\n@@ -994,22 +994,19 @@\n rve(\n-s.c\n+newC\n apacity\n- * 2\n )%0A%09%7D\n@@ -1017,17 +1017,17 @@\n or i := \n-s\n+v\n .size; i\n@@ -1045,17 +1045,17 @@\n i-- %7B%0A%09%09\n-s\n+v\n .data%5Bi%5D\n@@ -1057,17 +1057,17 @@\n ta%5Bi%5D = \n-s\n+v\n .data%5Bi-\n@@ -1074,17 +1074,17 @@\n 1%5D%0A%09%7D%0A%0A%09\n-s\n+v\n .data%5Bin\n@@ -1098,17 +1098,17 @@\n  valor%0A%09\n-s\n+v\n .size++%0A\n",
+            "lines": "130"
+        },
+        {
+            "label": "2026-06-03_00-02-09",
+            "content": "@@ -481,25 +481,16 @@\n rch%0Afunc\n- (s *Set)\n  BetterS\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-06-03_00-02-43",
+            "content": "@@ -800,26 +800,44 @@\n  Insert(\n+indice int, \n val\n-ue\n+or\n  int)\n+ error\n  %7B%0A%09if s\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-06-03_00-04-24",
+            "content": "@@ -492,21 +492,21 @@\n  *Set) B\n-inary\n+etter\n Search(v\n@@ -819,123 +819,113 @@\n %7B%0A%09i\n-ndice:= s.BinarySearch(value) %0A%09%09if indice %3E= 0%7B%0A%09%09%09return%0A%09%09%7D%0A%0A%09%09posicao := -indice-1%0A%09%09if s.size == s.capacity%7B%0A%09\n+f s.size == s.capacity %7B%0A%09%09newCapacity := s.capacity * 2%0A%0A%09%09if newCapacity == 0 %7B%0A%09%09%09newCapacity = 1%0A%09%09%7D%0A\n %09%09s.\n@@ -949,20 +949,19 @@\n y * 2)%0A%09\n-%09\n %7D\n+%0A\n %0A\n-%09\n %09for i :\n@@ -974,23 +974,22 @@\n ze; i %3E \n-posicao\n+indice\n ; i-- %7B%0A\n@@ -1017,24 +1017,25 @@\n i-1%5D%0A%09%7D%0A\n+%0A\n %09s.data%5B\n posicao%5D\n@@ -1030,24 +1030,23 @@\n ata%5B\n-posicao\n+indice\n %5D = val\n-ue\n+or\n %0A%09s.\n@@ -1052,20 +1052,29 @@\n .size++%0A\n-%0A%09%7D%0A\n+%09return nil%0A%7D\n %0A//igual\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-06-03_00-11-21",
+            "content": "@@ -1073,304 +1073,8 @@\n %09%7D%0A%0A\n-func (s * Set) Contains(value int) bool %7B%0A%09return s.BinarySearch(value) %3E= 0%0A%7D%0A%0A//vetbuild%0Afunc (s *Set) Erase(value int) bool %7B%0A%09indice := s.BinarySearch(value)%0A%09%09if indice %3C 0%7B%0A%09%09%09return false%0A%09%09%7D%0A%0A%09%09for i := indice; i %3C s.size-1; i++ %7B%0A%09%09s.data%5Bi%5D = s.data%5Bi+1%5D%0A%09%7D%0A%09s.size--%0A%09return true%0A%09%7D%0A%0A%0A\n //ig\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-06-03_00-15-59",
+            "content": "@@ -47,23 +47,23 @@\n %22str\n-conv\n+ings\n %22%0A%09%22str\n-ings\n+conv\n %22%0A)%0A\n@@ -2261,24 +2261,27 @@\n %22erase%22:%0A%09%09%09\n+// \n value, _ := \n@@ -2307,71 +2307,8 @@\n 1%5D)%0A\n-%09%09%09if !v.Erase(value)%7B%0A%09%09%09%09fmt.Println(%22value not found%22)%0A%09%09%09%7D%0A\n %09%09ca\n@@ -2325,16 +2325,18 @@\n ns%22:%0A%09%09%09\n+//\n  value, \n@@ -2367,102 +2367,8 @@\n 1%5D)%0A\n-%09%09%09 if v.Contains(value)%7B%0A%09%09%09%09fmt.Println(%22true%22)%0A%09%09%09 %7D else %7B%0A%09%09%09%09fmt.Println(%22false%22)%0A%09%09%09 %7D%0A\n %09%09ca\n",
+            "lines": "148"
+        },
+        {
+            "label": "2026-06-03_00-18-00",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Set struct {\n\tdata []int\n\tsize int \n\tcapacity int\n}\n\nfunc NewSet(capacity int) *Set{\n\treturn &Set{\n\t\tdata: make([]int, 1),\n\t\tsize: 0,\n\t\tcapacity: 1,\n\t}\n}\n\n//igual vetbuild\nfunc (s *Set) Reserve(newCapacity int) {\n\tif newCapacity <= s.capacity {\n\t\treturn\n\t}\n\tnData := make([]int, newCapacity)\n\tfor i := range s.size {\n\t\tnData[i] = s.data[i]\n\t}\n\ts.data = nData\n\ts.capacity = newCapacity\n}\n\n//igual bettersearch\nfunc (s *Set) BinarySearch(value int) int {\n\tcomeco, fim := 0, s.size - 1\n\n\tfor comeco <= fim {\n\t\tdivisor := (comeco + fim)/2\n\n\t\tif s.data[divisor] > value {\n\t\t\tfim = divisor -1\n\t\t} else if s.data[divisor] < value {\n\t\t\tcomeco = divisor + 1\n\t\t} else {\n\t\t\treturn divisor\n\t\t}\n\t}\n\treturn - comeco - 1\n\t\n}\n\nfunc (s *Set) Insert(value int) {\n\tindice:= s.BinarySearch(value) \n\t\tif indice >= 0{\n\t\t\treturn\n\t\t}\n\n\t\tposicao := -indice-1\n\t\tif s.size == s.capacity{\n\t\t\ts.Reserve(s.capacity * 2)\n\t\t}\n\t\tfor i := s.size; i > posicao; i-- {\n\t\ts.data[i] = s.data[i-1]\n\t}\n\ts.data[posicao] = value\n\ts.size++\n\n\t}\n\nfunc (s * Set) Contains(value int) bool {\n\treturn s.BinarySearch(value) >= 0\n}\n\n//vetbuild\nfunc (s *Set) Erase(value int) bool {\n\tindice := s.BinarySearch(value)\n\t\tif indice < 0{\n\t\t\treturn false\n\t\t}\n\n\t\tfor i := indice; i < s.size-1; i++ {\n\t\ts.data[i] = s.data[i+1]\n\t}\n\ts.size--\n\treturn true\n\t}\n\n\n//igual vetbuild\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tvar result strings.Builder\n\tfmt.Fprintf(&result, \"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tfmt.Fprintf(&result, \"%s%d\", sep, value)\n\t}\n\treturn result.String()\n}\n\nfunc (s *Set) Show() string{\n\treturn \"[\" + Join(s.data[:s.size], \", \") + \"]\"\n}\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tv := NewSet(0)\n\tfor scanner.Scan() {\n\t\tfmt.Print(\"$\")\n\t\tline = scanner.Text()\n\t\tfmt.Println(line)\n\t\tparts := strings.Fields(line)\n\t\tif len(parts) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = parts[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t\tvalue, _ := strconv.Atoi(parts[1])\n\t\t\tv = NewSet(value)\n\t\tcase \"insert\":\n\t\t\tfor _, part := range parts[1:] {\n\t\t\tvalue, _ := strconv.Atoi(part)\n\t\t\tv.Insert(value)\n\t\t\t }\n\t\tcase \"show\":\n\t\t\tfmt.Println(v.Show())\n\t\tcase \"erase\":\n\t\t\tvalue, _ := strconv.Atoi(parts[1])\n\t\t\tif !v.Erase(value){\n\t\t\t\tfmt.Println(\"value not found\")\n\t\t\t}\n\t\tcase \"contains\":\n\t\t\t value, _ := strconv.Atoi(parts[1])\n\t\t\t if v.Contains(value){\n\t\t\t\tfmt.Println(\"true\")\n\t\t\t } else {\n\t\t\t\tfmt.Println(\"false\")\n\t\t\t }\n\t\tcase \"clear\":\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "156"
+        }
+    ]
+}

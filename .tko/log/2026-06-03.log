@@ -1,0 +1,15 @@
+2026-06-03 00:01:27, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:02:09, EXEC, v:1, k:ed@setbuild, mode:FULL, size:129, fail:COMP
+2026-06-03 00:02:43, EXEC, v:1, k:ed@setbuild, mode:FULL, size:129, fail:COMP
+2026-06-03 00:04:24, EXEC, v:1, k:ed@setbuild, mode:FULL, size:129, fail:COMP
+2026-06-03 00:06:59, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:11:21, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:33, size:129
+2026-06-03 00:11:55, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:11:21, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:15:59, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:33, size:148
+2026-06-03 00:16:59, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:12:59, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 00:15:59, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-03 00:18:00, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100, size:156
+2026-06-03 00:18:07, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-06-03 00:18:55, SELF, v:1, k:ed@setbuild, self:1, rate:100, study:64, friend:cecilia, concept:1, debug:1
