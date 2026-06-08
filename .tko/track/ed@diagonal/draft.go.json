@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_18-53-13",
+            "content": "@@ -240,17 +240,17 @@\n tring(s%5B\n-0\n+k\n %5D))%0A  //\n@@ -313,16 +313,30 @@\n ain() %7B%0A\n+    var k int%0A\n     var \n@@ -362,28 +362,13 @@\n an(&\n-s)%0A    diagonal(s, 0\n+k, &s\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-08_18-53-50",
+            "content": "@@ -291,12 +291,8 @@\n al(s\n-%5B1:%5D\n , k \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-08_18-54-03",
+            "content": "package main\nimport \"fmt\"\n\n\nfunc diagonal(s string, k int) {\n  if len(s) == 0 {\n    return\n  }\n  // imprima k caracteres\n  for i := 0; i < k; i++{\n    fmt.Print(\" \")\n  }\n  // imprima o primeiro caractere de s e pule a linha\n  fmt.Println(string(s[0]))\n  // fa\u00e7a a chamada recursiva\n  diagonal(s[1:], k + 1)\n}\n\nfunc main() {\n    var s string\n    fmt.Scan(&s)\n    diagonal(s, 0)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -20,6 +20,7 @@ sources:
   quests: null
 expanded:
 - ed@bfs
+- ed@rec
 flags:
   inbox: all
   panel: skills
@@ -27,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@vector
-selected_index: 4
+selected: ed@diagonal
+selected_index: 17

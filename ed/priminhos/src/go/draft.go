@@ -1,11 +1,13 @@
 package main
-import "fmt"
+import (
+"fmt"
+)
 
 func eh_primo(x int, div int) bool {
 	if x < 2 {
 		return false
 	}
-	if div == x {
+	if div * div > x {
 		return true 
 	}
 	if x % div == 0 {
@@ -30,5 +32,14 @@ func vetor_primos(n int) [] int{
 func main() {
     var n int
     fmt.Scan(&n)
-    fmt.Println(vetor_primos(n))
+    primos := vetor_primos(n)
+
+    fmt.Print("[")
+    for i, p := range primos {
+        if i > 0 {
+            fmt.Print(", ")
+        }
+        fmt.Print(p)
+    }
+    fmt.Println("]")
 }
