@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_17-58-23",
+            "content": "package main\nimport \"fmt\"\n\ntype Editor struct {\n    texto []rune\n    cursor int\n    Z [] [] rune\n    Y [] [] rune\n}\n\nfunc NewEditor() *Editor{\n    return &Editor{texto : []rune{}, cursor: 0}\n}\n\nfunc (e * Editor) salvaEstado(){\n    estado := make([]rune, len(e.texto))\n    copy(estado, e.texto)\n    e.Z = append(e.Z, estado)\n    e.Y = nil\n}\n\nfunc (e *Editor) insert(caractareAtual rune){\n    e.salvaEstado()\n    e.texto = append(e.texto[:e.cursor]), append([]rune{caractereAtual})\n}\n\nfunc main() {\n    fmt.Print()\n\n}\n",
+            "lines": "30"
+        }
+    ]
+}

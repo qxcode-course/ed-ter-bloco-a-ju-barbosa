@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_18-10-31",
+            "content": "@@ -679,17 +679,16 @@\n inha + 1\n-)\n %0A       \n@@ -719,123 +719,15 @@\n     \n-    delete(diagonal, linha - coluna)%0A            delete(diagonal2, linha - coluna)%0A        %7D%0A    %7D%0A    backtrack(0)\n+%7D%0A    %7D\n %0A   \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-15_18-12-16",
+            "content": "@@ -56,17 +56,16 @@\n   coluna\n-s\n  := make\n@@ -413,25 +413,24 @@\n    if coluna\n-s\n %5Bcoluna%5D %7C%7C \n@@ -429,28 +429,28 @@\n una%5D %7C%7C diag\n-onal\n+rama\n %5Blinha - col\n@@ -541,17 +541,16 @@\n   coluna\n-s\n %5Bcoluna%5D\n@@ -614,29 +614,28 @@\n         diag\n-onal2\n+rama\n %5Blinha - col\n@@ -681,16 +681,16 @@\n ha + 1)%0A\n+\n         \n@@ -704,17 +704,8 @@\n ete(\n-colunas, \n colu\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-15_18-15-18",
+            "content": "@@ -640,24 +640,25 @@\n  - coluna%5D =\n+=\n  true%0A%0A     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-15_18-15-41",
+            "content": "@@ -625,33 +625,33 @@\n diagonal2%5Blinha \n-+\n+-\n  coluna%5D = true%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-15_18-15-57",
+            "content": "@@ -905,9 +905,9 @@\n fmt.\n-S\n+s\n can(\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-15_18-16-17",
+            "content": "@@ -797,25 +797,25 @@\n nal2, linha \n-+\n+-\n  coluna)%0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-15_18-17-14",
+            "content": "package main\nimport \"fmt\"\n\nfunc NRainhas(n int) int{\n    colunas := make(map[int]bool)\n    diagonal := make(map[int]bool) //linha - coluna\n    diagonal2 := make(map[int]bool) // linha mais coluna\n    solucao := 0\n\n    var backtrack func(linha int)\n    backtrack = func(linha int){\n        if linha == n {\n            solucao++\n            return\n        }\n\n        for coluna := 0; coluna < n; coluna++{\n            if colunas[coluna] || diagonal[linha - coluna] || diagonal2[linha + coluna]{\n                continue\n            }\n            colunas[coluna] = true\n            diagonal[linha - coluna] = true \n            diagonal2[linha + coluna] = true\n\n            backtrack(linha + 1)\n            delete(colunas, coluna)\n            delete(diagonal, linha - coluna)\n            delete(diagonal2, linha + coluna)\n        }\n    }\n    backtrack(0)\n    return solucao\n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    fmt.Println(NRainhas(n))\n}\n",
+            "lines": "38"
+        }
+    ]
+}

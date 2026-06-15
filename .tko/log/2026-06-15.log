@@ -1,0 +1,34 @@
+2026-06-15 17:36:00, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-15 17:36:48, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0
+2026-06-15 17:37:38, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-15 17:39:18, MOVE, v:1, k:ed@controlz, mode:DOWN
+2026-06-15 17:39:21, MOVE, v:1, k:ed@controlz, mode:PICK
+2026-06-15 17:39:18, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:39:18, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:39:18, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:39:18, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:40:54, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:48:58, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:53:18, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:58:23, EXEC, v:1, k:ed@controlz, mode:FULL, size:30, fail:COMP
+2026-06-15 17:58:24, MOVE, v:1, k:ed@controlz, mode:BACK
+2026-06-15 17:58:33, MOVE, v:1, k:ed@editor, mode:PICK
+2026-06-15 17:58:45, MOVE, v:1, k:ed@editor, mode:BACK
+2026-06-15 17:56:58, MOVE, v:1, k:ed@controlz, mode:EDIT
+2026-06-15 17:59:39, MOVE, v:1, k:ed@n_rainhas, mode:DOWN
+2026-06-15 17:59:40, MOVE, v:1, k:ed@n_rainhas, mode:PICK
+2026-06-15 17:59:39, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 17:59:39, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 17:59:39, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 18:04:03, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 18:09:03, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 18:10:31, EXEC, v:1, k:ed@n_rainhas, mode:FULL, size:35, fail:COMP
+2026-06-15 18:12:16, EXEC, v:1, k:ed@n_rainhas, mode:FULL, size:38, fail:COMP
+2026-06-15 18:14:02, MOVE, v:1, k:ed@n_rainhas, mode:EDIT
+2026-06-15 18:15:18, EXEC, v:1, k:ed@n_rainhas, mode:FULL, size:38, fail:COMP
+2026-06-15 18:15:41, EXEC, v:1, k:ed@n_rainhas, mode:FULL, size:38, fail:COMP
+2026-06-15 18:15:57, EXEC, v:1, k:ed@n_rainhas, mode:FULL, size:38, fail:COMP
+2026-06-15 18:16:17, EXEC, v:1, k:ed@n_rainhas, mode:FULL, rate:25, size:38
+2026-06-15 18:17:14, EXEC, v:1, k:ed@n_rainhas, mode:FULL, rate:100, size:38
+2026-06-15 18:17:20, MOVE, v:1, k:ed@n_rainhas, mode:BACK
+2026-06-15 18:17:43, SELF, v:1, k:ed@n_rainhas, self:1, rate:100, study:17, concept:1
