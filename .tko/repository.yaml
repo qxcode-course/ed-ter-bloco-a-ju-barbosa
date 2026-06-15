@@ -20,6 +20,7 @@ sources:
   quests: null
 expanded:
 - ed@backtrack
+- ed@linear
 flags:
   inbox: all
   panel: skills
@@ -27,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@n_rainhas
-selected_index: 12
+selected: ed@vector
+selected_index: 3
