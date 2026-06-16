@@ -1,0 +1,24 @@
+2026-06-16 00:50:10, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-16 00:55:13, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-16 00:55:50, SELF, v:1, k:ed@editorint, self:1, rate:100, study:162, friend:cecilia, concept:1, problem:1, refactor:1
+2026-06-16 00:57:15, MOVE, v:1, k:ed@controlz, mode:PICK
+2026-06-16 00:57:41, MOVE, v:1, k:ed@controlz, mode:BACK
+2026-06-16 00:57:59, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-06-16 01:01:35, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:02:56, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:06:04, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:08:23, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:13:34, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:09:16, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:18:21, EXEC, v:1, k:ed@queimando, mode:FULL, size:170, fail:COMP
+2026-06-16 01:18:23, EXEC, v:1, k:ed@queimando, mode:FULL, fail:COMP
+2026-06-16 01:18:00, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:23:14, EXEC, v:1, k:ed@queimando, mode:FULL, size:170, fail:COMP
+2026-06-16 01:23:30, EXEC, v:1, k:ed@queimando, mode:FULL, rate:20, size:170
+2026-06-16 01:23:26, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:23:30, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-16 01:24:27, EXEC, v:1, k:ed@queimando, mode:FULL, rate:20, size:172
+2026-06-16 01:25:32, EXEC, v:1, k:ed@queimando, mode:FULL, rate:20, size:172
+2026-06-16 01:26:48, EXEC, v:1, k:ed@queimando, mode:FULL, rate:100, size:172
+2026-06-16 01:26:54, MOVE, v:1, k:ed@queimando, mode:BACK
+2026-06-16 01:27:33, SELF, v:1, k:ed@queimando, self:1, rate:100, study:48, concept:1, refactor:1

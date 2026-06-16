@@ -1,3 +1,5 @@
+//usando código de queimando arvore
+
 package main
 
 import (
@@ -12,10 +14,40 @@ type Pos struct {
 }
 
 func (p Pos) getNeigh() []Pos{
+	return []Pos{
+		{p.l - 1, p.c}, //cima
+		{p.l + 1, p.c}, //baixo
+		{p.l, p.c - 1}, //esquerda
+		{p.l, p.c + 1}, //direita
+	}
 
 }
 func burnTrees(grid [][]rune, l, c int) {
+	numL := len(grid)
+	numC := len(grid[0])
+
 	stack := NewStack[Pos]()
+	stack.Push(Pos{l, c})
+
+	for !stack.IsEmpty() {
+		atual := stack.Pop()
+		al, ac := atual.l, atual.c
+
+		
+	if al < 0 || al >= numL || ac < 0 || ac >= numC { // se estiver fora da matriz, retorne
+		continue
+	}
+	if grid[al][ac] != '#' { // se o elemento atual não for uma arvore, retorne
+		continue
+	}
+
+	grid[al][ac] = 'o'  
+
+	for _, vizinho := range atual.getNeigh(){
+		stack.Push(vizinho)
+		}
+	}
+}
 	
 	//coloca o elemento a ser analisado 
 
@@ -37,7 +69,7 @@ func burnTrees(grid [][]rune, l, c int) {
 	//   - retirar o elemento do topo
 	//   - se puder ser queimado, queime e adicione seus vizinhos à pilha
 
-}
+
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
