@@ -1,0 +1,23 @@
+2026-06-23 12:55:02, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-06-23 12:55:28, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-06-23 13:07:30, MOVE, v:1, k:ed@alternando, mode:DOWN
+2026-06-23 13:07:31, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:07:59, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-23 13:08:04, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-06-23 13:08:39, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-06-23 13:08:43, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:07:30, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-23 13:09:08, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-23 13:11:09, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-23 13:22:49, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:25:18, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-23 13:33:04, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:33:53, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-23 13:33:39, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-23 13:35:40, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:36:22, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-23 13:36:35, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-23 13:39:17, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-23 13:39:48, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:66
+2026-06-23 13:40:40, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:67
+2026-06-23 13:42:59, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:73

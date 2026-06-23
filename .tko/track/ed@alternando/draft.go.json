@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_13-39-48",
+            "content": "@@ -388,36 +388,8 @@\n    %7D\n-%0A        fmt.Print(elemento)\n %0A%0A  \n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-23_13-40-40",
+            "content": "@@ -520,32 +520,8 @@\n nt%7B%0A\n-    n := len(jogadores)%0A\n     \n@@ -561,62 +561,22 @@\n ) %25 \n-n%0A       if espada %3C 0 %7B%0A        espada += n%0A       %7D%0A\n+len(jogadores)\n %0A   \n@@ -628,16 +628,16 @@\n  espada%0A\n+\n        %7D\n@@ -633,25 +633,24 @@\n da%0A       %7D%0A\n-%0A\n         %7D%0A  \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-23_13-42-59",
+            "content": "package main\nimport \"fmt\"\n\n//CODIGO DA PRINCESA V1\n\nfunc print_jogadores(jogadores[]int, espada int) {\n    fmt.Print(\"[ \")\n    for i, elemento := range jogadores{\n        if elemento == 0{\n            continue\n        }\n        \n        if i == espada && elemento > 0{\n            fmt.Print(\">\")\n        }\n        \n        if i == espada && elemento < 0{\n            fmt.Print(\"<\")\n        }\n        fmt.Print(elemento)\n\n    fmt.Print(\"\")\n    }\n\n    fmt.Print(\"]\\n\")\n}\n\nfunc procurar_vivo(jogadores[] int, espada int) int{\n    n := len(jogadores)\n    for {\n       espada = (espada + 1) % n\n       if espada < 0 {\n        espada += n\n       }\n\n       if jogadores[espada] != 0{\n        return espada\n       }\n\n        }\n    }\n\nfunc main() {\n    var qtd, espada int\n    fmt.Scan(&qtd, &espada)\n\n    jogadores:= make([]int, 0, qtd)\n\n    for i := 1; i <= qtd; i++{\n    jogadores= append(jogadores, i)\n}\n   espada -= 1\n    for range qtd -1{\n        print_jogadores(jogadores, espada)\n        vai_morrer := procurar_vivo(jogadores, espada)\n        jogadores[vai_morrer] = 0\n        espada = procurar_vivo(jogadores, espada)\n        \n    }\n    print_jogadores(jogadores, espada)\n}\n\n/*princesa 1\npackage main\nimport \"fmt\"\n\n\n\n\n    \n\n\n*/\n",
+            "lines": "73"
+        }
+    ]
+}
