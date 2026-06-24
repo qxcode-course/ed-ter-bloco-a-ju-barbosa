@@ -2,7 +2,7 @@ package main
 import "fmt"
 
 //CODIGO DA PRINCESA V1
-
+//TAVA FAZENDO NO PRINCESA V1
 func print_jogadores(jogadores[]int, espada int) {
     fmt.Print("[ ")
     for i, elemento := range jogadores{
@@ -11,11 +11,11 @@ func print_jogadores(jogadores[]int, espada int) {
         }
         
         if i == espada && elemento > 0{
-            fmt.Print(">")
+            fmt.Print("%d>", elemento)
         }
         
         if i == espada && elemento < 0{
-            fmt.Print("<")
+            fmt.Print("%d<", elemento)
         }
         fmt.Print(elemento)
 
@@ -59,15 +59,3 @@ func main() {
     }
     print_jogadores(jogadores, espada)
 }
-
-/*princesa 1
-package main
-import "fmt"
-
-
-
-
-    
-
-
-*/
