@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_21-45-19",
+            "content": "@@ -24,77 +24,8 @@\n t%22%0A%0A\n-func resolver(matriz %5B%5D%5B%5Drune, index int) bool %7B%0A    return false%0A%7D%0A%0A\n func\n@@ -274,116 +274,7 @@\n   %7D \n-%0A%0A   if resolver(matriz, 0)%7B%0A    for _, linha := range matriz %7B%0A        fmt.Println(string(linha))%0A    %7D%0A   %7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-28_21-46-59",
+            "content": "@@ -76,447 +76,21 @@\n %0A   \n-N := len(matriz)%0A%0A   if index == N*N %7B%0A    return true%0A   %7D%0A%0A   l := index / N%0A   c := index %25 N%0A%0A   if matriz%5Bl%5D%5Bc%5D != '.' %7B%0A    return resolver(matriz, index+1)%0A   %7D%0A%0A   /*for v := '1'; v %3C= rune('0' + N); v++ %7B%0A    if podeColocar (matriz, l, c, v)%7B%0A        matriz%5Bl%5D%5Bc%5D = v%0A        if resolver (matriz, index + 1) %7B%0A            return true%0A        %7D*/%0A    %7D%0A   %7D%0A%7D%0A%0Afunc podeColocar(matriz %5B%5D%5B%5Drune, l, c int, v rune) bool%7B%0A    return !\n+ return false\n %0A%7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-28_21-55-14",
+            "content": "@@ -433,16 +433,22 @@\n /%0A    %7D%0A\n+   %7D%0A%7D\n %0A%0Afunc p\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_21-55-27",
+            "content": "@@ -508,13 +508,9 @@\n urn \n-false\n+!\n %0A%7D%0A%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-28_21-55-34",
+            "content": "@@ -427,36 +427,16 @@\n     %7D*/%0A\n-        return true%0A\n     %7D%0A%0A%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-28_21-55-48",
+            "content": "@@ -235,24 +235,211 @@\n ndex+1)%0A   %7D\n+%0A%0A   /*for v := '1'; v %3C= rune('0' + N); v++ %7B%0A    if podeColocar (matriz, l, c, v)%7B%0A        matriz%5Bl%5D%5Bc%5D = v%0A        if resolver (matriz, index + 1) %7B%0A            return true%0A        %7D*/\n %0A        ret\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_21-56-19",
+            "content": "@@ -271,409 +271,8 @@\n  %7D%0A%0A\n-func quadrante(matriz %5B%5D%5B%5Drune, l, c, int, v rune) bool %7B%0A    N:=len(matriz)%0A    tamanho := 2%0A    if N == 9 %7B%0A        tamanho = 3%0A    %7D%0A%0A    l0 := (l / tamanho) * tamanho%0A    c0 := (c / tamanho) * tamanho%0A%0A    for i := 0; i %3C tamanho; i++%7B%0A        for j := 0; j %3C tamanho; j++%7B%0A            if matriz%5Bl0 + 1%5D%5Bc0 + j%5D == v %7B%0A                return true%0A            %7D%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0A\n %0Afun\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-28_22-03-09",
+            "content": "@@ -572,17 +572,17 @@\n iz%5Bl0 + \n-i\n+1\n %5D%5Bc0 + j\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-28_22-04-44",
+            "content": "@@ -295,32 +295,33 @@\n z %5B%5D%5B%5Drune, l, c\n+,\n  int, v rune) bo\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-28_22-05-36",
+            "content": "@@ -671,172 +671,8 @@\n %0A%7D%0A%0A\n-func linha(matriz %5B%5D%5B%5Drune, l int, v rune) bool %7B%0A    for _, x := range matriz%5Bl%5D %7B%0A        if x == v %7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0A\n %0Afun\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-28_22-09-57",
+            "content": "@@ -247,236 +247,23 @@\n %0A   \n-for v := '1'; v %3C= rune('0' + N); v++%7B%0A    if podeColocar(matriz, l, c, v)%7B%0A        matriz%5Bl%5D%5Bc%5D = v%0A        if resolver(matriz, index)%7B%0A             return true%0A        %7D%0A        matriz%5Bl%5D%5Bc%5D = '.'%0A    %7D%0A   %7D%0A       return fals\n+     return tru\n e%0A  \n@@ -835,348 +835,83 @@\n %0A%7D%0A%0A\n-func coluna(matriz %5B%5D%5B%5Drune, c int, v rune) bool %7B%0A    for _, linha := range matriz %7B%0A        if linha%5Bc%5D == v %7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0Afunc podeColocar(matriz %5B%5D%5B%5Drune, l, c int, v rune) bool%7B%0A    return !linha(matriz, l, v) &&%0A           !coluna(matriz, c, v) &&%0A           !quadrante(matriz, l, c, v)\n+%0Afunc podeColocar(matriz %5B%5D%5B%5Drune, l, c int, v rune) bool%7B%0A    return false\n %0A%7D%0A%0A\n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-06-28_22-17-05",
+            "content": "@@ -381,12 +381,8 @@\n ndex\n- + 1\n )%7B%0A \n",
+            "lines": "93"
+        },
+        {
+            "label": "2026-06-28_22-17-23",
+            "content": "@@ -1575,16 +1575,83 @@\n   %7D%0A%0A   \n+for _, linha := range matriz %7B%0A    fmt.Println(string(linha))%0A   %7D \n %0A%0A   if \n",
+            "lines": "93"
+        },
+        {
+            "label": "2026-06-28_22-18-44",
+            "content": "package main\nimport \"fmt\"\n\nfunc resolver(matriz [][]rune, index int) bool {\n   N := len(matriz)\n\n   if index == N*N {\n    return true\n   }\n\n   l := index / N\n   c := index % N\n\n   if matriz[l][c] != '.' {\n    return resolver(matriz, index+1)\n   }\n   for v := '1'; v <= rune('0' + N); v++{\n    if podeColocar(matriz, l, c, v){\n        matriz[l][c] = v\n        if resolver(matriz, index + 1){\n             return true\n        }\n        matriz[l][c] = '.'\n    }\n   }\n       return false\n    }\n\nfunc quadrante(matriz [][]rune, l, c int, v rune) bool {\n    N:=len(matriz)\n    tamanho := 2\n    if N == 9 {\n        tamanho = 3\n    }\n\n    l0 := (l / tamanho) * tamanho\n    c0 := (c / tamanho) * tamanho\n\n    for i := 0; i < tamanho; i++{\n        for j := 0; j < tamanho; j++{\n            if matriz[l0 + i][c0 + j] == v {\n                return true\n            }\n        }\n    }\n    return false\n}\n\nfunc linha(matriz [][]rune, l int, v rune) bool {\n    for _, x := range matriz[l] {\n        if x == v {\n            return true\n        }\n    }\n    return false\n}\n\nfunc coluna(matriz [][]rune, c int, v rune) bool {\n    for _, linha := range matriz {\n        if linha[c] == v {\n            return true\n        }\n    }\n    return false\n}\n\nfunc podeColocar(matriz [][]rune, l, c int, v rune) bool{\n    return !linha(matriz, l, v) &&\n           !coluna(matriz, c, v) &&\n           !quadrante(matriz, l, c, v)\n}\n\nfunc main() {\n   var N int\n   fmt.Scan(&N)\n\n   matriz := make([][]rune, N)\n   for i := range matriz {\n    var linha string\n    fmt.Scan(&linha)\n    matriz[i] = []rune(linha)\n   }\n\n   \n\n   if resolver(matriz, 0){\n    for _, linha := range matriz {\n        fmt.Println(string(linha))\n    }\n   }\n}\n",
+            "lines": "91"
+        }
+    ]
+}
