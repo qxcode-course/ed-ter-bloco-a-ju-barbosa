@@ -1,0 +1,19 @@
+2026-06-28 19:36:00, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-28 19:38:10, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:61
+2026-06-28 19:40:32, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:38:10, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:45:28, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:49:33, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:52:58, EXEC, v:1, k:ed@alternando, mode:FULL, size:67, fail:COMP
+2026-06-28 19:53:22, EXEC, v:1, k:ed@alternando, mode:FULL, size:67, fail:COMP
+2026-06-28 19:53:38, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:67
+2026-06-28 19:54:10, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0
+2026-06-28 19:54:48, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:67
+2026-06-28 19:55:25, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:67
+2026-06-28 19:55:23, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:55:25, MOVE, v:1, k:ed@alternando, mode:EDIT
+2026-06-28 19:59:51, EXEC, v:1, k:ed@alternando, mode:FULL, rate:100, size:66
+2026-06-28 19:59:58, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-28 20:00:19, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-06-28 20:00:29, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-06-28 20:00:59, SELF, v:1, k:ed@alternando, self:1, rate:100, study:73, concept:1, debug:1

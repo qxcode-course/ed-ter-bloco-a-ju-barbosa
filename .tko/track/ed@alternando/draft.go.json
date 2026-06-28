@@ -32,8 +32,43 @@
         },
         {
             "label": "2026-06-24_14-12-25",
-            "content": "package main\nimport \"fmt\"\n\n//CODIGO DA PRINCESA V1\n//TAVA FAZENDO NO PRINCESA V1\nfunc print_jogadores(jogadores[]int, espada int) {\n    fmt.Print(\"[ \")\n    for i, elemento := range jogadores{\n        if elemento == 0{\n            continue\n        }\n        \n        if i == espada && elemento > 0{\n            fmt.Print(\"%d>\", elemento)\n        }\n        \n        if i == espada && elemento < 0{\n            fmt.Print(\"%d<\", elemento)\n        }\n        fmt.Print(elemento)\n\n    fmt.Print(\"\")\n    }\n\n    fmt.Print(\"]\\n\")\n}\n\nfunc procurar_vivo(jogadores[] int, espada int) int{\n    n := len(jogadores)\n    for {\n       espada = (espada + 1) % n\n       if espada < 0 {\n        espada += n\n       }\n\n       if jogadores[espada] != 0{\n        return espada\n       }\n\n        }\n    }\n\nfunc main() {\n    var qtd, espada int\n    fmt.Scan(&qtd, &espada)\n\n    jogadores:= make([]int, 0, qtd)\n\n    for i := 1; i <= qtd; i++{\n    jogadores= append(jogadores, i)\n}\n   espada -= 1\n    for range qtd -1{\n        print_jogadores(jogadores, espada)\n        vai_morrer := procurar_vivo(jogadores, espada)\n        jogadores[vai_morrer] = 0\n        espada = procurar_vivo(jogadores, espada)\n        \n    }\n    print_jogadores(jogadores, espada)\n}\n",
+            "content": "@@ -308,25 +308,24 @@\n    fmt.Print\n-f\n (%22%25d%3E%22, elem\n@@ -410,17 +410,16 @@\n mt.Print\n-f\n (%22%25d%3C%22, \n",
             "lines": "61"
+        },
+        {
+            "label": "2026-06-28_19-38-10",
+            "content": "@@ -278,24 +278,10 @@\n ada \n-%7B%0A            if\n+&&\n  ele\n@@ -287,29 +287,24 @@\n emento %3E 0%7B%0A\n-     \n             \n@@ -338,36 +338,68 @@\n %0A       \n+ %7D%0A\n      \n-%7D else %7B\n+   \n %0A      \n+  if i == espada && elemento %3C 0%7B%0A\n         \n@@ -442,35 +442,10 @@\n     \n-    \n %7D%0A\n-        %7D else %7B%0A    \n     \n@@ -461,16 +461,9 @@\n rint\n-f(%22%25d%22, \n+(\n elem\n@@ -468,34 +468,17 @@\n emento)%0A\n-        %7D%0A        \n+%0A\n     fmt.\n@@ -487,29 +487,26 @@\n int(%22%22)%0A    \n-    \n %7D\n+%0A\n %0A    fmt.Pri\n@@ -518,21 +518,12 @@\n %5Cn%22)\n-        \n %0A%7D%0A%0A\n-%0A\n func\n@@ -558,24 +558,14 @@\n nt, \n-pos int, direcao\n+espada\n  int\n@@ -616,37 +616,86 @@\n     \n-pos = (pos + direcao\n+espada = (espada + 1) %25 n%0A       if espada %3C 0 %7B%0A        espada\n  +\n+=\n  n\n-) %25 n\n+%0A       %7D%0A\n %0A   \n@@ -715,18 +715,20 @@\n res%5B\n-pos\n+espada\n %5D != 0\n- \n %7B%0A  \n@@ -744,11 +744,14 @@\n urn \n-pos\n+espada\n %0A   \n@@ -760,16 +760,24 @@\n   %7D%0A\n+%0A  \n     \n-%7D%0A%7D%0A\n+  %7D%0A    %7D\n %0A%0Afu\n@@ -880,27 +880,8 @@\n qtd)\n-%0A    sinal := fase \n %0A%0A  \n@@ -947,81 +947,44 @@\n s, i\n-*sinal)%0A    sinal *= -1%0A%7D%0A   espada -= 1%0A   vivos := qtd%0A%0A    for vivos %3E\n+)%0A%7D%0A   espada -= 1%0A    for range qtd\n  -1%7B\n@@ -1027,25 +1027,24 @@\n espada)%0A\n-%0A\n         \n direcao \n@@ -1039,107 +1039,18 @@\n     \n-direcao := 1   %0A        if jogadores%5Bespada%5D %3C 0 %7B%0A            direcao = -1%0A        %7D %0A        alvo\n+vai_morrer\n  := \n@@ -1080,25 +1080,16 @@\n , espada\n-, direcao\n )%0A      \n@@ -1104,34 +1104,24 @@\n res%5B\n-alvo\n+vai_morrer\n %5D = 0%0A\n-        vivos--%0A\n     \n@@ -1168,19 +1168,18 @@\n pada\n-, direcao)%0A\n+)%0A        \n %0A   \n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-06-28_19-52-58",
+            "content": "@@ -811,18 +811,8 @@\n  int\n-, fase int\n %0A   \n@@ -838,15 +838,8 @@\n pada\n-, &fase\n )%0A%0A \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-28_19-53-22",
+            "content": "@@ -803,16 +803,20 @@\n , espada\n+ int\n , fase i\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-28_19-53-38",
+            "content": "@@ -1045,16 +1045,17 @@\n vivos %3E \n+-\n 1%7B%0A     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-28_19-54-48",
+            "content": "@@ -405,11 +405,11 @@\n tf(%22\n-%3C\n %25d\n+%3C\n %22, e\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-28_19-55-25",
+            "content": "@@ -234,32 +234,41 @@\n tinue%0A        %7D%0A\n+        %0A\n         if i == \n@@ -303,17 +303,16 @@\n ento %3E 0\n- \n %7B%0A      \n@@ -520,17 +520,16 @@\n .Print(%22\n- \n %22)%0A     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-28_19-59-51",
+            "content": "package main\nimport \"fmt\"\n\n//CODIGO DA PRINCESA V1\n//TAVA FAZENDO NO PRINCESA V1\nfunc print_jogadores(jogadores[]int, espada int) {\n    fmt.Print(\"[ \")\n    for i, elemento := range jogadores{\n        if elemento == 0{\n            continue\n        }\n        if i == espada {\n            if elemento > 0 {\n                 fmt.Printf(\"%d>\", elemento)\n            } else {\n                  fmt.Printf(\"<%d\", elemento)\n            }\n        } else {\n            fmt.Printf(\"%d\", elemento)\n        }\n            fmt.Print(\" \")\n        }\n    fmt.Print(\"]\\n\")        \n}\n\n\nfunc procurar_vivo(jogadores[] int, pos int, direcao int) int{\n    n := len(jogadores)\n    for {\n       pos = (pos + direcao + n) % n\n       if jogadores[pos] != 0 {\n        return pos\n       }\n    }\n}\n\n\nfunc main() {\n    var qtd, espada, fase int\n    fmt.Scan(&qtd, &espada, &fase)\n\n    jogadores:= make([]int, 0, qtd)\n    sinal := fase \n\n    for i := 1; i <= qtd; i++{\n    jogadores= append(jogadores, i*sinal)\n    sinal *= -1\n}\n   espada -= 1\n   vivos := qtd\n\n    for vivos > 1{\n        print_jogadores(jogadores, espada)\n\n        direcao := 1   \n        if jogadores[espada] < 0 {\n            direcao = -1\n        } \n        alvo := procurar_vivo(jogadores, espada, direcao)\n        jogadores[alvo] = 0\n        vivos--\n        espada = procurar_vivo(jogadores, espada, direcao)\n\n    }\n    print_jogadores(jogadores, espada)\n}\n",
+            "lines": "66"
         }
     ]
 }
