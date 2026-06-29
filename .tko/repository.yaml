@@ -19,7 +19,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@backtrack
+- ed@list
+- ed@tree
+- ed@linear
 flags:
   inbox: all
   panel: skills
@@ -29,5 +31,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@n_rainhas
-selected_index: 12
+selected: ed@altura
+selected_index: 32

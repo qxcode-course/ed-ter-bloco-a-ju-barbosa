@@ -1,0 +1,36 @@
+2026-06-29 04:05:39, MOVE, v:1, k:ed@sudoku, mode:PICK
+2026-06-29 04:06:02, MOVE, v:1, k:ed@sudoku, mode:BACK
+2026-06-29 04:06:15, MOVE, v:1, k:ed@inverter, mode:DOWN
+2026-06-29 04:06:16, MOVE, v:1, k:ed@inverter, mode:PICK
+2026-06-29 04:09:01, EXEC, v:1, k:ed@inverter, mode:FULL, rate:100, size:76
+2026-06-29 04:09:05, MOVE, v:1, k:ed@inverter, mode:BACK
+2026-06-29 04:09:38, SELF, v:1, k:ed@inverter, self:1, rate:100, study:2, friend:cecilia
+2026-06-29 04:11:00, MOVE, v:1, k:ed@clonar, mode:DOWN
+2026-06-29 04:11:02, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-06-29 04:11:15, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-06-29 04:11:00, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-29 04:14:18, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-29 04:15:42, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-06-29 04:17:11, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-06-29 04:17:31, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-06-29 04:17:35, EXEC, v:1, k:ed@clonar, mode:FULL, rate:100, size:83
+2026-06-29 04:17:37, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-06-29 04:17:57, SELF, v:1, k:ed@clonar, self:1, rate:100, study:6
+2026-06-29 04:18:24, MOVE, v:1, k:ed@soma, mode:DOWN
+2026-06-29 04:18:26, MOVE, v:1, k:ed@soma, mode:PICK
+2026-06-29 04:18:40, MOVE, v:1, k:ed@soma, mode:BACK
+2026-06-29 04:19:16, MOVE, v:1, k:ed@soma, mode:PICK
+2026-06-29 04:21:43, EXEC, v:1, k:ed@soma, mode:FULL, rate:42, size:86
+2026-06-29 04:18:24, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-29 04:21:50, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-29 04:21:42, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-29 04:25:46, EXEC, v:1, k:ed@soma, mode:FULL, size:93, fail:COMP
+2026-06-29 04:27:03, EXEC, v:1, k:ed@soma, mode:FULL, size:93, fail:COMP
+2026-06-29 04:27:01, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-06-29 04:30:04, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:96
+2026-06-29 04:31:31, EXEC, v:1, k:ed@soma, mode:FULL, rate:100, size:103
+2026-06-29 04:31:37, MOVE, v:1, k:ed@soma, mode:BACK
+2026-06-29 04:32:03, SELF, v:1, k:ed@soma, self:1, rate:100, study:13, concept:1
+2026-06-29 04:32:30, MOVE, v:1, k:ed@serial, mode:DOWN
+2026-06-29 04:32:31, MOVE, v:1, k:ed@serial, mode:PICK
+2026-06-29 04:32:56, MOVE, v:1, k:ed@serial, mode:BACK
