@@ -19,9 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@list
 - ed@tree
-- ed@linear
 flags:
   inbox: all
   panel: skills
@@ -31,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@altura
-selected_index: 32
+selected: ed@inverter
+selected_index: 10
